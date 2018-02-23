@@ -1,0 +1,582 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>การบริหารจัดการ ฐานข้อมูล ด้วย MySQL · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ssh.html" />
+    
+    
+    <link rel="prev" href="selinux-policy-webserver.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >การบริหารจัดการ ฐานข้อมูล ด้วย MySQL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#xE01;&#xE32;&#xE23;&#xE1A;&#xE23;&#xE34;&#xE2B;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;-&#xE10;&#xE32;&#xE19;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;-&#xE14;&#xE49;&#xE27;&#xE22;-mysql">&#xE01;&#xE32;&#xE23;&#xE1A;&#xE23;&#xE34;&#xE2B;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23; &#xE10;&#xE32;&#xE19;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25; &#xE14;&#xE49;&#xE27;&#xE22; MySQL<img src="assets/how-to-install-mysql-on-centos-7.jpg" alt=""></h2>
+<p>&#xE01;&#xE32;&#xE23;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07; package</p>
+<pre><code># yum install mariadb  mariadb-server
+# systemctl enable mariadb
+# systemctl start mariadb
+
+# mysql -u root
+</code></pre><p>&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32; password &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; user root</p>
+<pre><code># mysql_secure_installation
+</code></pre><p>&#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE01;&#xE01;&#xE32;&#xE23; &#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32; password &#xE41;&#xE25;&#xE49;&#xE27; &#xE15;&#xE48;&#xE2D;&#xE44;&#xE1B;&#xE01;&#xE32;&#xE23;  login &#xE08;&#xE30;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; option -p</p>
+<pre><code># mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 16
+Server version: 5.5.56-MariaDB MariaDB Server
+
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Type &apos;help;&apos; or &apos;\h&apos; for help. Type &apos;\c&apos; to clear the current input statement.
+
+MariaDB [(none)]&gt; \q
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE15;&#xE48;&#xE2D;&#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;   mysqladmin</p>
+<pre><code>[root@webserver ~]# mysqladmin -u root -p version
+Enter password: 
+mysqladmin  Ver 9.0 Distrib 5.5.56-MariaDB, for Linux on x86_64
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Server version        5.5.56-MariaDB
+Protocol version    10
+Connection        Localhost via UNIX socket
+UNIX socket        /var/lib/mysql/mysql.sock
+Uptime:            19 hours 56 min 8 sec
+
+Threads: 1  Questions: 225  Slow queries: 0  Opens: 0  Flush tables: 2  Open tables: 26  Queries per second avg: 0.003
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE15;&#xE48;&#xE2D; &#xE14;&#xE49;&#xE27;&#xE22; option -e  &#xE08;&#xE30;&#xE44;&#xE14;&#xE49;&#xE1C;&#xE25;&#xE25;&#xE31;&#xE1E;&#xE17;&#xE4C;</p>
+<pre><code>[root@webserver ~]# mysql -u root -p -e &quot;show databases&quot;
+Enter password: 
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| webdata            |
++--------------------+
+[root@webserver ~]#
+</code></pre><p>&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39;&#xE27;&#xE34;&#xE18;&#xE35;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49; &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; &#xE42;&#xE14;&#xE22;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;   ?  &#xE2B;&#xE23;&#xE37;&#xE2D;  &quot;help&quot;</p>
+<pre><code>MariaDB [(none)]&gt; ? create
+
+MariaDB [(none)]&gt; help create
+
+MariaDB [(none)]&gt; help create database
+
+Name: &apos;CREATE DATABASE&apos;
+Description:
+Syntax:
+CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] db_name
+    [create_specification] ...
+
+create_specification:
+    [DEFAULT] CHARACTER SET [=] charset_name
+  | [DEFAULT] COLLATE [=] collation_name
+
+CREATE DATABASE creates a database with the given name. To use this
+statement, you need the CREATE privilege for the database. CREATE
+SCHEMA is a synonym for CREATE DATABASE.
+
+URL: http://dev.mysql.com/doc/refman/5.5/en/create-database.html
+</code></pre><p>&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; Database &#xE0A;&#xE37;&#xE48;&#xE2D; testdb &#xE41;&#xE25;&#xE30; testuser</p>
+<pre><code>MariaDB [(none)]&gt; create database testdb;
+MariaDB [(none)]&gt; create user &apos;testuser&apos;@&apos;localhost&apos; identified by &apos;password&apos;;
+MariaDB [(none)]&gt; grant all on testdb.* to &apos;testuser&apos; identified by &apos;password&apos;;
+</code></pre><p>&#xE08;&#xE32;&#xE01; 3 &#xE1A;&#xE23;&#xE23;&#xE17;&#xE31;&#xE14;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE40;&#xE02;&#xE35;&#xE22;&#xE19;&#xE22;&#xE48;&#xE2D; &#xE44;&#xE14;&#xE49;&#xE14;&#xE49;&#xE27;&#xE22;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;  user  &#xE43;&#xE19;&#xE02;&#xE13;&#xE30;&#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23; assign database permision</p>
+<pre><code>MariaDB [(none)]&gt; create database testdb;
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]&gt; grant all on testdb.* to &apos;testuser&apos; identified by &apos;password&apos;;
+Query OK, 0 rows affected (0.00 sec)
+</code></pre><p>&#xE2D;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01; &#xE01;&#xE32;&#xE23;&#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE15;&#xE48;&#xE2D;</p>
+<pre><code>MariaDB [(none)]&gt; exit
+</code></pre><p>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; &#xE15;&#xE32;&#xE23;&#xE32;&#xE07; &#xE14;&#xE49;&#xE27;&#xE22;&#xE2A;&#xE34;&#xE17;&#xE18;&#xE34;&#xE02;&#xE2D;&#xE07; testuser</p>
+<pre><code># mysql -u testuser -p
+</code></pre><p>&#xE15;&#xE48;&#xE2D;&#xE21;&#xE32;&#xE08;&#xE30;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; &#xE15;&#xE32;&#xE23;&#xE32;&#xE07;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE27;&#xE48;&#xE32;  &quot;customers&quot;</p>
+<pre><code>MariaDB [(none)]&gt; use testdb;
+Database changed
+MariaDB [testdb]&gt; create table customers (customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, first_name TEXT, last_name TEXT);
+Query OK, 0 rows affected (0.01 sec)
+
+MariaDB [testdb]&gt; show tables;
++------------------+
+| Tables_in_testdb |
++------------------+
+| customers        |
++------------------+
+1 row in set (0.00 sec)
+
+MariaDB [testdb]&gt; describe customers;
++-------------+---------+------+-----+---------+----------------+
+| Field       | Type    | Null | Key | Default | Extra          |
++-------------+---------+------+-----+---------+----------------+
+| customer_id | int(11) | NO   | PRI | NULL    | auto_increment |
+| first_name  | text    | YES  |     | NULL    |                |
+| last_name   | text    | YES  |     | NULL    |                |
++-------------+---------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+</code></pre><p>Reset password  root &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; Database</p>
+<p>1 &#xE2B;&#xE22;&#xE38;&#xE14;&#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07; Database &#xE17;&#xE35;&#xE48;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE2D;&#xE22;&#xE39;&#xE48; &#xE41;&#xE25;&#xE30; &#xE17;&#xE33;&#xE01;&#xE32;&#xE23; start service &#xE02;&#xE36;&#xE49;&#xE19;&#xE21;&#xE32;&#xE43;&#xE2B;&#xE21;&#xE48;&#xE14;&#xE49;&#xE27;&#xE22; option &#xE17;&#xE35;&#xE48;&#xE44;&#xE21;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23; password &#xE2B;&#xE23;&#xE37;&#xE2D; safemode</p>
+<pre><code># systemctl stop mariadb
+# mysqld_safe --skip-grant-tables &amp;
+[1] 5062
+# ps -ef | grep 5062
+root      5062  4997  0 05:00 pts/0    00:00:00 /bin/sh /bin/mysqld_safe --skip-grant-tables
+mysql     5208  5062  0 05:00 pts/0    00:00:00 /usr/libexec/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib64/mysql/plugin --user=mysql --skip-grant-tables --log-error=/var/log/mariadb/mariadb.log --pid-file=/var/run/mariadb/mariadb.pid --socket=/var/lib/mysql/mysql.sock
+root      5232  4997  0 05:00 pts/0    00:00:00 grep --color=auto 5062
+</code></pre><p>2 &#xE43;&#xE2B;&#xE49; login &#xE14;&#xE49;&#xE27;&#xE22; user root</p>
+<pre><code>mysql -u root
+
+MariaDB [(none)]&gt;  use mysql;
+MariaDB [(none)]&gt;  update user SET PASSWORD=PASSWORD(&quot;password&quot;) WHERE USER=&apos;root&apos;;
+MariaDB [(none)]&gt;  flush privileges;
+MariaDB [(none)]&gt;  exit
+</code></pre><p>3 &#xE2B;&#xE22;&#xE38;&#xE14;&#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19; &#xE02;&#xE2D;&#xE07; mysqld_safe  &#xE01;&#xE48;&#xE2D;&#xE19; &#xE14;&#xE49;&#xE27;&#xE22;&#xE01;&#xE32;&#xE23;  kill process &#xE41;&#xE25;&#xE49;&#xE27;&#xE08;&#xE36;&#xE07; &#xE04;&#xE48;&#xE2D;&#xE22; restart service start  Mysql</p>
+<pre><code># kill -9 5062
+# systemctl start mariadb
+</code></pre><pre><code>[root@webserver ~]# mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 2
+Server version: 5.5.56-MariaDB MariaDB Server
+
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Type &apos;help;&apos; or &apos;\h&apos; for help. Type &apos;\c&apos; to clear the current input statement.
+
+MariaDB [(none)]&gt; SELECT User, Host, Password FROM mysql.user;
++----------+-----------+-------------------------------------------+
+| User     | Host      | Password                                  |
++----------+-----------+-------------------------------------------+
+| root     | localhost | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
+| root     | 127.0.0.1 | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
+| root     | ::1       | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
+| testuser | %         | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
+| webuser  | %         | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
++----------+-----------+-------------------------------------------+
+5 rows in set (0.00 sec)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="selinux-policy-webserver.html" class="navigation navigation-prev " aria-label="Previous page: Selinux Policy และ  webserver">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ssh.html" class="navigation navigation-next " aria-label="Next page: การใช้งาน SSH">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"การบริหารจัดการ ฐานข้อมูล ด้วย MySQL","level":"1.10","depth":1,"next":{"title":"การใช้งาน SSH","level":"1.11","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"previous":{"title":"Selinux Policy และ  webserver","level":"1.9","depth":1,"path":"selinux-policy-webserver.md","ref":"selinux-policy-webserver.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mysql.md","mtime":"2018-02-23T06:47:06.223Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

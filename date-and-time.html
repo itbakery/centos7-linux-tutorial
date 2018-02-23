@@ -1,0 +1,557 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>การตั้งค่า วันที่ และ เวลา  Date and Time · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="users-and-groups.html" />
+    
+    
+    <link rel="prev" href="chapter1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >การตั้งค่า วันที่ และ เวลา  Date and Time</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#xE1A;&#xE17;&#xE17;&#xE35;&#xE48;-2-&#xE01;&#xE32;&#xE23;&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32;-&#xE27;&#xE31;&#xE19;&#xE17;&#xE35;&#xE48;-&#xE41;&#xE25;&#xE30;-&#xE40;&#xE27;&#xE25;&#xE32;--date-and-time">&#xE1A;&#xE17;&#xE17;&#xE35;&#xE48; 2 <strong>&#xE01;&#xE32;&#xE23;&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32; &#xE27;&#xE31;&#xE19;&#xE17;&#xE35;&#xE48; &#xE41;&#xE25;&#xE30; &#xE40;&#xE27;&#xE25;&#xE32;  Date and Time</strong></h2>
+<p>&#xE43;&#xE19;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE1B;&#xE0E;&#xE34;&#xE1A;&#xE31;&#xE15;&#xE34;&#xE1B;&#xE31;&#xE08;&#xE08;&#xE38;&#xE1A;&#xE31;&#xE19;&#xE44;&#xE14;&#xE49;&#xE08;&#xE33;&#xE41;&#xE19;&#xE01;&#xE40;&#xE27;&#xE25;&#xE32;&#xE2D;&#xE2D;&#xE01;&#xE40;&#xE1B;&#xE47;&#xE19; &#xE2A;&#xE2D;&#xE07;&#xE0A;&#xE19;&#xE34;&#xE14;</p>
+<ol>
+<li>Real-time Clock &#xE42;&#xE14;&#xE22;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;&#xE2D;&#xE49;&#xE32;&#xE07;&#xE16;&#xE36;&#xE07; hardware clock (&#xE27;&#xE07;&#xE08;&#xE23; &#xE1A;&#xE19;&#xE1A;&#xE2D;&#xE23;&#xE4C;&#xE14;)  &#xE08;&#xE30;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE15;&#xE25;&#xE2D;&#xE14;&#xE40;&#xE27;&#xE25;&#xE32; &#xE41;&#xE21;&#xE49;&#xE27;&#xE48;&#xE32;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE04;&#xE2D;&#xE21;&#xE1E;&#xE34;&#xE27;&#xE40;&#xE15;&#xE2D;&#xE23;&#xE4C;&#xE08;&#xE30;&#xE2B;&#xE22;&#xE38;&#xE14;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE01;&#xE47;&#xE15;&#xE32;&#xE21;</li>
+<li>System clock &#xE2B;&#xE23;&#xE37;&#xE2D;&#xE17;&#xE35;&#xE48;&#xE40;&#xE23;&#xE35;&#xE22;&#xE01;&#xE27;&#xE48;&#xE32;  software clock  &#xE08;&#xE30;&#xE17;&#xE33;&#xE14;&#xE33;&#xE40;&#xE19;&#xE34;&#xE19;&#xE01;&#xE32;&#xE23;&#xE43;&#xE19;&#xE23;&#xE30;&#xE14;&#xE31;&#xE1A;&#xE02;&#xE2D;&#xE07; kernel &#xE42;&#xE14;&#xE22;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;&#xE2D;&#xE49;&#xE32;&#xE07;&#xE2D;&#xE34;&#xE07;&#xE40;&#xE23;&#xE34;&#xE48;&#xE21;&#xE15;&#xE49;&#xE19;&#xE08;&#xE32;&#xE01; real-time &#xE15;&#xE2D;&#xE19;&#xE40;&#xE23;&#xE34;&#xE48;&#xE21;&#xE15;&#xE49;&#xE19;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19; &#xE41;&#xE15;&#xE48;&#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE01;&#xE17;&#xE35;&#xE48;&#xE44;&#xE14;&#xE49;&#xE40;&#xE23;&#xE34;&#xE48;&#xE21;&#xE15;&#xE49;&#xE19;&#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE44;&#xE1B;&#xE41;&#xE25;&#xE49;&#xE27; &#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE01;&#xE47;&#xE08;&#xE30;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE2D;&#xE34;&#xE2A;&#xE23;&#xE30;</li>
+</ol>
+<p>&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; timedatectl &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE41;&#xE2A;&#xE14;&#xE07; &#xE04;&#xE48;&#xE32;&#xE02;&#xE2D;&#xE07;  local time &#xE41;&#xE25;&#xE30; universal time   &#xE19;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19;&#xE22;&#xE31;&#xE07;&#xE41;&#xE2A;&#xE14;&#xE07;&#xE2A;&#xE16;&#xE32;&#xE19;&#xE30;&#xE02;&#xE2D;&#xE07; NTP (Network time server)</p>
+<pre><code># timedatectl
+      Local time: Sat 2017-11-11 12:33:05 UTC
+  Universal time: Sat 2017-11-11 12:33:05 UTC
+        RTC time: Sat 2017-11-11 08:03:39
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: yes
+      DST active: n/a
+
+Warning: The system is configured to read the RTC time in the local time zone.
+         This mode can not be fully supported. It will create various problems
+         with time zone changes and daylight saving time adjustments. The RTC
+         time is never updated, it relies on external facilities to maintain it.
+         If at all possible, use RTC in UTC by calling
+         &apos;timedatectl set-local-rtc 0&apos;.
+</code></pre><p>&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32; timezone</p>
+<pre><code># timedatectl set-timezones  time_zone
+</code></pre><pre><code># timedatectl list-timezones | grep Bangkok
+Asia/Bangkok
+
+# timedatectl set-timezone Asia/Bangkok
+Local time: Sat 2017-11-11 19:42:37 +07
+Universal time: Sat 2017-11-11 12:42:37 UTC
+RTC time: Sat 2017-11-11 19:42:37
+Time zone: Asia/Bangkok (+07, +0700)
+NTP enabled: yes
+NTP synchronized: yes
+RTC in local TZ: yes
+DST active: n/a
+</code></pre><p>&#xE40;&#xE21;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE41;&#xE1B;&#xE25;&#xE07;&#xE2A;&#xE16;&#xE32;&#xE19;&#xE30;&#xE02;&#xE2D;&#xE07; chrony &#xE2B;&#xE23;&#xE37;&#xE2D; ntp  &#xE01;&#xE47;&#xE22;&#xE31;&#xE07;&#xE44;&#xE21;&#xE48;&#xE44;&#xE14;&#xE49;&#xE23;&#xE31;&#xE1A;&#xE23;&#xE39;&#xE49;&#xE42;&#xE14;&#xE22; timedatectl  &#xE08;&#xE30;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;  restart</p>
+<pre><code># systemctl restart systemd-timedated.service
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE15;&#xE31;&#xE49;&#xE07;&#xE40;&#xE27;&#xE25;&#xE32; &#xE40;&#xE2D;&#xE07;</p>
+<pre><code># timedatectl set-time HH:MM:SS
+</code></pre><p>HH - &#xE40;&#xE27;&#xE25;&#xE32; &#xE0A;&#xE31;&#xE48;&#xE27;&#xE42;&#xE21;&#xE07;   MM - &#xE40;&#xE27;&#xE25;&#xE32;&#xE19;&#xE32;&#xE17;&#xE35;    SS - &#xE40;&#xE27;&#xE25;&#xE32;&#xE27;&#xE34;&#xE19;&#xE32;&#xE17;&#xE35;</p>
+<p>&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32; &#xE27;&#xE31;&#xE19; &#xE40;&#xE14;&#xE37;&#xE2D;&#xE19; &#xE1B;&#xE35;</p>
+<pre><code>timedatectl set-time YYYY-MM-DD
+</code></pre><p>YYYY- &#xE1B;&#xE35; &#xE04;&#xE28;   MM -&#xE40;&#xE14;&#xE37;&#xE2D;&#xE19;   DD- &#xE27;&#xE31;&#xE19;&#xE17;&#xE35;&#xE48;</p>
+<p><strong>&#xE01;&#xE32;&#xE23;&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32;&#xE2D;&#xE31;&#xE15;&#xE42;&#xE19;&#xE21;&#xE31;&#xE15;&#xE34; &#xE43;&#xE2B;&#xE49;  system clock  &#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE42;&#xE22;&#xE07;&#xE01;&#xE31;&#xE1A; remote server</strong></p>
+<p>&#xE01;&#xE32;&#xE23;&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32;&#xE19;&#xE35;&#xE49;&#xE08;&#xE30;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07; &#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; Chrony &#xE44;&#xE1B;&#xE14;&#xE49;&#xE27;&#xE22;&#xE01;&#xE31;&#xE19;</p>
+<pre><code># yum install chrony
+# vi /etc/chrony.conf
+
+# systemctl restart chronyd
+
+# timedatectl set-ntp yes
+</code></pre><p><strong>&#xE41;&#xE2A;&#xE14;&#xE07;&#xE1C;&#xE25;&#xE27;&#xE31;&#xE19; &#xE40;&#xE27;&#xE25;&#xE32;&#xE1B;&#xE31;&#xE08;&#xE08;&#xE38;&#xE1A;&#xE31;&#xE19; Date/Time</strong></p>
+<pre><code># date
+Sat Nov 11 20:16:49 +07 2017
+
+# date --utc
+Sat Nov 11 13:16:57 UTC 2017
+
+# date +&quot;%Y-%m-%d %H:%M&quot;
+2017-11-11 20:24 
+
+# date +&quot;%F %T&quot;
+</code></pre><p>&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  date +&quot;format&quot;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Control Sequence</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">%H</td>
+<td style="text-align:left">&#xE40;&#xE27;&#xE25;&#xE32;&#xE0A;&#xE31;&#xE48;&#xE27;&#xE42;&#xE21;&#xE07;  HH format</td>
+</tr>
+<tr>
+<td style="text-align:left">%M</td>
+<td style="text-align:left">&#xE40;&#xE27;&#xE25;&#xE32;&#xE19;&#xE32;&#xE17;&#xE35;   MM format</td>
+</tr>
+<tr>
+<td style="text-align:left">%S</td>
+<td style="text-align:left">&#xE40;&#xE27;&#xE25;&#xE32;&#xE27;&#xE34;&#xE19;&#xE32;&#xE17;&#xE35; SS  format</td>
+</tr>
+<tr>
+<td style="text-align:left">%d</td>
+<td style="text-align:left">&#xE27;&#xE31;&#xE19;&#xE17;&#xE35;&#xE48;&#xE02;&#xE2D;&#xE07; &#xE40;&#xE14;&#xE37;&#xE2D;&#xE19;   DD format</td>
+</tr>
+<tr>
+<td style="text-align:left">%m</td>
+<td style="text-align:left">&#xE40;&#xE14;&#xE37;&#xE2D;&#xE19; MM  format   (&#xE2B;&#xE32;&#xE01;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE41;&#xE1A;&#xE1A;&#xE2D;&#xE31;&#xE01;&#xE29;&#xE23; &#xE43;&#xE0A;&#xE49; %h)</td>
+</tr>
+<tr>
+<td style="text-align:left">%Y</td>
+<td style="text-align:left">&#xE1B;&#xE35; &#xE04;&#xE28;</td>
+</tr>
+<tr>
+<td style="text-align:left">%Z</td>
+<td style="text-align:left">&#xE15;&#xE31;&#xE27;&#xE22;&#xE48;&#xE2D;&#xE02;&#xE2D;&#xE07; timezone</td>
+</tr>
+<tr>
+<td style="text-align:left">%F</td>
+<td style="text-align:left">&#xE41;&#xE17;&#xE19;&#xE23;&#xE39;&#xE1B;&#xE41;&#xE1A;&#xE1A;&#xE27;&#xE31;&#xE19;&#xE40;&#xE14;&#xE37;&#xE2D;&#xE19;&#xE1B;&#xE35; YYYY-MM-DD  &#xE40;&#xE0A;&#xE48;&#xE19;&#xE40;&#xE14;&#xE35;&#xE22;&#xE27;&#xE01;&#xE31;&#xE1A; &quot;%Y-%m-%d&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">%T</td>
+<td style="text-align:left">&#xE41;&#xE17;&#xE19;&#xE23;&#xE39;&#xE1B;&#xE41;&#xE1A;&#xE1A;&#xE02;&#xE2D;&#xE07;&#xE27;&#xE31;&#xE19;&#xE40;&#xE27;&#xE25;&#xE32; HH:MM:SS</td>
+</tr>
+</tbody>
+</table>
+<p>&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32;&#xE40;&#xE27;&#xE25;&#xE32; &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; date</p>
+<p>&#xE40;&#xE0A;&#xE48;&#xE19; &#xE27;&#xE31;&#xE19;&#xE17;&#xE35;&#xE48; 11  &#xE40;&#xE14;&#xE37;&#xE2D;&#xE19; &#xE1E;&#xE24;&#xE28;&#xE08;&#xE34;&#xE01;&#xE32;&#xE22;&#xE19;  2560 &#xE40;&#xE27;&#xE25;&#xE32; 20:30</p>
+<pre><code>date --set &quot;2017-11-11 20:30:00&quot;
+</code></pre><p><strong>&#xE01;&#xE32;&#xE23;&#xE41;&#xE2A;&#xE14;&#xE07;&#xE1C;&#xE25;&#xE40;&#xE27;&#xE25;&#xE32;&#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;</strong></p>
+<pre><code># hwclock --utc
+Sun 12 Nov 2017 04:21:24 AM +07  -0.510940 seconds
+
+# hwclock --local
+Sat 11 Nov 2017 09:22:30 PM +07  -0.135211 seconds
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter1.html" class="navigation navigation-prev " aria-label="Previous page: การตั้งค่า system local และ keyboard configuration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="users-and-groups.html" class="navigation navigation-next " aria-label="Next page: บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"การตั้งค่า วันที่ และ เวลา  Date and Time","level":"1.3","depth":1,"next":{"title":"บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)","level":"1.4","depth":1,"path":"users-and-groups.md","ref":"users-and-groups.md","articles":[]},"previous":{"title":"การตั้งค่า system local และ keyboard configuration","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"date-and-time.md","mtime":"2018-02-23T06:47:06.179Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

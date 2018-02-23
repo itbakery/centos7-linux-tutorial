@@ -1,0 +1,672 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ss-command.html" />
+    
+    
+    <link rel="prev" href="ssh.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#xE01;&#xE32;&#xE23;&#xE1A;&#xE23;&#xE34;&#xE2B;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23; &#xE23;&#xE30;&#xE1A;&#xE1A;&#xE40;&#xE04;&#xE23;&#xE37;&#xE2D;&#xE02;&#xE48;&#xE32;&#xE22;&#xE1A;&#xE19;  Linux (Linux Network Service)</p>
+<p>&#xE1A;&#xE19; CentOS7   &#xE08;&#xE30;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;  NetworkManager Service daemon &#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE04;&#xE27;&#xE1A;&#xE04;&#xE38;&#xE21; &#xE41;&#xE25;&#xE30;&#xE01;&#xE32;&#xE23;&#xE1A;&#xE23;&#xE34;&#xE2B;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE40;&#xE04;&#xE23;&#xE37;&#xE2D;&#xE02;&#xE48;&#xE32;&#xE22; &#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; Linux &#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A; &#xE08;&#xE32;&#xE01;&#xE1A;&#xE17;&#xE01;&#xE48;&#xE2D;&#xE19;&#xE2B;&#xE19;&#xE49;&#xE32;&#xE19;&#xE35;&#xE49;</p>
+<pre><code>cd sshlab
+vagrant ssh client
+
+[vagrant@client ~]$ sudo su -
+[root@client ~]#
+</code></pre><p>1 &#xE41;&#xE2A;&#xE14;&#xE07; Network Interface  &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;</p>
+<pre><code>[root@client ~]# ip link
+[root@client ~]# ip addr
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:37:f8:46 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 78893sec preferred_lft 78893sec
+    inet6 fe80::1b1b:543b:db0b:ff0d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:7e:96:cc brd ff:ff:ff:ff:ff:ff
+    inet 192.168.33.20/24 brd 192.168.33.255 scope global enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe7e:96cc/64 scope link 
+       valid_lft forever preferred_lft forever
+
+[root@client ~]# ip addr show enp0s8
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:7e:96:cc brd ff:ff:ff:ff:ff:ff
+    inet 192.168.33.20/24 brd 192.168.33.255 scope global enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe7e:96cc/64 scope link 
+       valid_lft forever preferred_lft forever
+</code></pre><p>2 &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; nmcli &#xE40;&#xE1B;&#xE47;&#xE19;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE17;&#xE35;&#xE48;&#xE43;&#xE0A;&#xE49;&#xE15;&#xE34;&#xE14;&#xE15;&#xE48;&#xE2D;&#xE01;&#xE31;&#xE1A; NetworkManager Deamon &#xE40;&#xE1B;&#xE47;&#xE19;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE04;&#xE27;&#xE32;&#xE21;&#xE2A;&#xE33;&#xE04;&#xE31;&#xE0D;&#xE21;&#xE32;&#xE01;&#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A; SystemAdmin</p>
+<pre><code>[root@client ~]# nmcli dev status
+DEVICE  TYPE      STATE      CONNECTION    
+enp0s3  ethernet  connected  enp0s3        
+enp0s8  ethernet  connected  System enp0s8 
+lo      loopback  unmanaged  --
+</code></pre><pre><code>[root@client ~]# nmcli connection show
+[root@client ~]# nmcli con show
+
+
+NAME           UUID                                  TYPE            DEVICE 
+System enp0s8  00cb8299-feb9-55b6-a378-3fdc720e0bc6  802-3-ethernet  enp0s8 
+enp0s3         5c54f4d1-1c6a-4bb0-9a23-8eaad898f751  802-3-ethernet  enp0s3
+</code></pre><pre><code>[root@client ~]# nmcli connection show &quot;System enp0s8&quot;  | grep ipv4
+
+ipv4.method:                            manual
+ipv4.dns:                               
+ipv4.dns-search:                        
+ipv4.dns-options:                       &quot;single-request-reopen&quot;
+ipv4.dns-priority:                      0
+ipv4.addresses:                         192.168.33.20/24
+ipv4.gateway:                           --
+ipv4.routes:                            
+ipv4.route-metric:                      -1
+ipv4.ignore-auto-routes:                no
+ipv4.ignore-auto-dns:                   yes
+ipv4.dhcp-client-id:                    --
+ipv4.dhcp-timeout:                      0
+ipv4.dhcp-send-hostname:                yes
+ipv4.dhcp-hostname:                     --
+ipv4.dhcp-fqdn:                         --
+ipv4.never-default:                     no
+ipv4.may-fail:                          yes
+ipv4.dad-timeout:                       -1 (default)
+</code></pre><p>3   &#xE44;&#xE1F;&#xE25;&#xE4C;&#xE17;&#xE35;&#xE48;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27;&#xE02;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE31;&#xE19; &#xE40;&#xE1B;&#xE47;&#xE19; static file &#xE43;&#xE19; /etc/sysconfig/network-scripts/</p>
+<pre><code>[root@client ~]# ls -l /etc/sysconfig/network-scripts/ifcfg-*
+
+-rw-r--r--. 1 root    root    312 Nov 20 14:19 /etc/sysconfig/network-scripts/ifcfg-enp0s3
+-rw-------. 1 vagrant vagrant 216 Nov 20 14:19 /etc/sysconfig/network-scripts/ifcfg-enp0s8
+-rw-r--r--. 1 root    root    254 Nov 20 14:19 /etc/sysconfig/network-scripts/ifcfg-lo
+
+[root@client ~]# cat /etc/sysconfig/network-scripts/ifcfg-enp0s8
+#VAGRANT-BEGIN
+# The contents below are automatically generated by Vagrant. Do not modify.
+NM_CONTROLLED=yes
+BOOTPROTO=none
+ONBOOT=yes
+IPADDR=192.168.33.20
+NETMASK=255.255.255.0
+DEVICE=enp0s8
+PEERDNS=no
+#VAGRANT-END
+</code></pre><p>4 &#xE43;&#xE2B;&#xE49;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23; &#xE25;&#xE1A; connection &#xE17;&#xE34;&#xE49;&#xE07;&#xE44;&#xE1B;&#xE01;&#xE48;&#xE2D;&#xE19; &#xE41;&#xE25;&#xE49;&#xE27;&#xE14;&#xE39;&#xE1C;&#xE25;&#xE01;&#xE23;&#xE30;&#xE17;&#xE1A;</p>
+<pre><code>[root@client ~]# nmcli connection delete &quot;System enp0s8&quot;
+Connection &apos;System enp0s8&apos; (00cb8299-feb9-55b6-a378-3fdc720e0bc6) successfully deleted.
+</code></pre><p>&#xE1C;&#xE25;&#xE01;&#xE23;&#xE30;&#xE17;&#xE1A;  1  Device &#xE08;&#xE30;&#xE40;&#xE1B;&#xE47;&#xE19; &#xE2D;&#xE34;&#xE2A;&#xE23;&#xE30; &#xE44;&#xE21;&#xE48;&#xE44;&#xE14;&#xE49;&#xE44;&#xE1B;&#xE40;&#xE01;&#xE32;&#xE30;&#xE01;&#xE31;&#xE1A; connection</p>
+<pre><code>[root@client ~]# nmcli dev status
+DEVICE  TYPE      STATE         CONNECTION 
+enp0s3  ethernet  connected     enp0s3     
+enp0s8  ethernet  disconnected  --         
+lo      loopback  unmanaged     --
+</code></pre><p>&#xE1C;&#xE25;&#xE01;&#xE23;&#xE30;&#xE17;&#xE1A; 2 Static file &#xE17;&#xE35;&#xE48;&#xE1A;&#xE48;&#xE07;&#xE1A;&#xE2D;&#xE01;&#xE2A;&#xE16;&#xE32;&#xE19;&#xE30; &#xE16;&#xE39;&#xE01;&#xE25;&#xE1A;&#xE44;&#xE1B;&#xE14;&#xE49;&#xE27;&#xE22;</p>
+<pre><code>[root@client ~]# ls -l /etc/sysconfig/network-scripts/ifcfg-*
+-rw-r--r--. 1 root root 312 Nov 20 14:19 /etc/sysconfig/network-scripts/ifcfg-enp0s3
+-rw-r--r--. 1 root root 254 Nov 20 14:19 /etc/sysconfig/network-scripts/ifcfg-lo
+</code></pre><p>&#xE1C;&#xE25;&#xE01;&#xE23;&#xE30;&#xE17;&#xE1A; 3  ip &#xE2B;&#xE32;&#xE22;&#xE44;&#xE1B;&#xE14;&#xE49;&#xE27;&#xE22;</p>
+<pre><code># ip a s enp0s8
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:7e:96:cc brd ff:ff:ff:ff:ff:ff
+</code></pre><p>5  &#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; connection  &#xE43;&#xE2B;&#xE21;&#xE48;</p>
+<pre><code>[root@client ~]# nmcli connection add type ethernet con-name my-enp0s8  ifname enp0s8 
+Connection &apos;my-enp0s8&apos; (19954a6c-66e5-4f6e-ab16-837460279014) successfully added.
+
+[root@client ~]# nmcli con mod -h
+</code></pre><p>6 &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14;&#xE04;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; connection</p>
+<pre><code>[root@client ~]# nmcli con mod my-enp0s8 ipv4.method manual ipv4.addr &quot;192.168.33.20/24&quot;
+[root@client ~]# nmcli con show my-enp0s8  | grep ipv4
+[root@client ~]# nmcli con show  my-enp0s8 | grep connection.autoconnect
+
+[root@client ~]# nmcli con down my-enp0s8
+[root@client ~]# nmcli con up  my-enp0s8
+[root@client ~]# ip a s enp0s8
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:7e:96:cc brd ff:ff:ff:ff:ff:ff
+    inet 192.168.33.20/24 brd 192.168.33.255 scope global enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::88e:690d:fd8:9bb9/64 scope link 
+       valid_lft forever preferred_lft forever
+</code></pre><pre><code>[root@client ~]# ls -l /etc/sysconfig/network-scripts/ifcfg-*
+-rw-r--r--. 1 root root 312 Nov 20 14:19 /etc/sysconfig/network-scripts/ifcfg-enp0s3
+-rw-r--r--. 1 root root 254 Nov 20 14:19 /etc/sysconfig/network-scripts/ifcfg-lo
+-rw-r--r--. 1 root root 319 Nov 20 17:00 /etc/sysconfig/network-scripts/ifcfg-my-enp0s8
+</code></pre><pre><code>[root@client ~]# cat /etc/sysconfig/network-scripts/ifcfg-my-enp0s8
+TYPE=Ethernet
+BOOTPROTO=none
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=my-enp0s8
+UUID=19954a6c-66e5-4f6e-ab16-837460279014
+DEVICE=enp0s8
+ONBOOT=yes
+IPADDR=192.168.33.20
+PREFIX=24
+IPV6_PEERDNS=yes
+IPV6_PEERROUTES=yes
+</code></pre><p>&#xE01;&#xE48;&#xE2D;&#xE19; Centos 7  &#xE17;&#xE35;&#xE48;&#xE22;&#xE31;&#xE07;&#xE44;&#xE21;&#xE48;&#xE21;&#xE35;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  nmcli  &#xE40;&#xE23;&#xE32;&#xE08;&#xE30;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE41;&#xE01;&#xE49;&#xE44;&#xE02; static file &#xE42;&#xE14;&#xE22;&#xE15;&#xE23;&#xE07; &#xE41;&#xE15;&#xE48;&#xE15;&#xE48;&#xE2D;&#xE21;&#xE32;&#xE40;&#xE21;&#xE37;&#xE48;&#xE2D; service NetworkManager daemon &#xE16;&#xE39;&#xE01;&#xE19;&#xE33;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; &#xE08;&#xE30;&#xE44;&#xE21;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE41;&#xE01;&#xE49; static file &#xE42;&#xE14;&#xE22;&#xE15;&#xE23;&#xE07;</p>
+<p><strong>&#xE2B;&#xE21;&#xE32;&#xE22;&#xE40;&#xE2B;&#xE15;&#xE38; &#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; nmcli &#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; ip4 &#xE44;&#xE14;&#xE49;&#xE15;&#xE2D;&#xE19;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE44;&#xE14;&#xE49;&#xE40;&#xE25;&#xE22;</strong></p>
+<pre><code># nmcli con add con-name net-eth0 ifname eth0 type ethernet ip4 192.168.1.10/24 gw4 192.168.1.1
+</code></pre><p>&#xE41;&#xE15;&#xE48;&#xE2B;&#xE32;&#xE01;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; nmcli con mod &#xE15;&#xE49;&#xE2D;&#xE07;&#xE43;&#xE0A;&#xE49;&#xE01;&#xE32;&#xE23;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14;&#xE04;&#xE48;&#xE32;&#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48;  ipv4</p>
+<pre><code># nmcli con mod net-eth0 ipv4.addresses 192.168.1.10/24
+# nmcli con mod net-eth0 ipv4.gateway 192.168.1.1
+# nmcli con mod net-eth0 ipv4.method manual
+# nmcli con up net-eth0
+</code></pre><p>&#xE15;&#xE23;&#xE27;&#xE08;&#xE2A;&#xE2D;&#xE1A; Gateway</p>
+<pre><code>[root@client ~]# ip r
+default via 10.0.2.2 dev enp0s3  proto static  metric 100 
+10.0.2.0/24 dev enp0s3  proto kernel  scope link  src 10.0.2.15  metric 100 
+192.168.33.0/24 dev enp0s8  proto kernel  scope link  src 192.168.33.20  metric 100
+</code></pre><p>&#xE04;&#xE27;&#xE32;&#xE21;&#xE2A;&#xE31;&#xE21;&#xE1E;&#xE31;&#xE19;&#xE18;&#xE23;&#xE30;&#xE2B;&#xE27;&#xE48;&#xE32;&#xE07; Firewall Zone &#xE41;&#xE25;&#xE30; network Interface</p>
+<pre><code># systemctl start firewalld
+
+# firewall-cmd --get-default-zone
+public
+
+# firewall-cmd  --list-all
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: enp0s3 enp0s8
+  sources: 
+  services: dhcpv6-client ssh
+  ports: 
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  sourceports: 
+  icmp-blocks: 
+  rich rules:
+</code></pre><p>&#xE08;&#xE30;&#xE40;&#xE2B;&#xE47;&#xE19;&#xE27;&#xE48;&#xE32; traffic &#xE17;&#xE35;&#xE48;&#xE40;&#xE02;&#xE49;&#xE32;&#xE21;&#xE32;&#xE22;&#xE31;&#xE07;   Linux &#xE1C;&#xE48;&#xE32;&#xE19;&#xE17;&#xE32;&#xE07; interface  enp0s3 enp0s8 &#xE08;&#xE30;&#xE1C;&#xE48;&#xE32;&#xE19;&#xE44;&#xE1B;&#xE22;&#xE31;&#xE07; zone  &#xE40;&#xE23;&#xE32;&#xE08;&#xE30;&#xE23;&#xE39;&#xE49;&#xE44;&#xE14;&#xE49;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE44;&#xE23;&#xE27;&#xE48;&#xE32;&#xE15;&#xE2D;&#xE19;&#xE19;&#xE35;&#xE49; Linux &#xE21;&#xE35; Firewall zone &#xE17;&#xE31;&#xE49;&#xE07;&#xE2B;&#xE21;&#xE14; &#xE01;&#xE35;&#xE48;&#xE42;&#xE0B;&#xE19; &#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE17;&#xE33;&#xE44;&#xE14;&#xE49;&#xE42;&#xE14;&#xE22;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49; option   --get-zones &#xE41;&#xE25;&#xE30; --list-all-zones</p>
+<pre><code># firewall-cmd --get-zones
+work drop internal external trusted home dmz public block
+
+# firewall-cmd  --list-all-zones
+</code></pre><p>&#xE20;&#xE32;&#xE22;&#xE43;&#xE19;&#xE41;&#xE15;&#xE48;&#xE25;&#xE30; &#xE42;&#xE0B;&#xE19;&#xE01;&#xE47;&#xE21;&#xE35;&#xE04;&#xE48;&#xE32;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; service default &#xE17;&#xE35;&#xE48;&#xE15;&#xE48;&#xE32;&#xE07;&#xE01;&#xE31;&#xE19; &#xE40;&#xE0A;&#xE48;&#xE19; zone work</p>
+<pre><code>work
+  target: default
+  icmp-block-inversion: no
+  interfaces: 
+  sources: 
+  services: dhcpv6-client ssh
+  ports: 
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  sourceports: 
+  icmp-blocks: 
+  rich rules:
+</code></pre><p>&#xE15;&#xE48;&#xE2D;&#xE21;&#xE32; &#xE08;&#xE30;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE43;&#xE2B;&#xE49; traffic &#xE17;&#xE35;&#xE48;&#xE1C;&#xE48;&#xE32;&#xE19;&#xE21;&#xE32;&#xE17;&#xE32;&#xE07; enp0s8 &#xE43;&#xE2B;&#xE49;&#xE44;&#xE1B;&#xE22;&#xE31;&#xE07; Zone  work &#xE41;&#xE17;&#xE19; Zone public </p>
+<p>&#xE42;&#xE14;&#xE22;&#xE1A;&#xE2D;&#xE01;&#xE43;&#xE2B;&#xE49; firewall-cmd  &#xE41;&#xE25;&#xE30; NetworkManager &#xE23;&#xE31;&#xE1A;&#xE17;&#xE23;&#xE32;&#xE1A;</p>
+<pre><code># firewall-cmd --permanent --zone=work --change-interface=enp0s8
+The interface is under control of NetworkManager, setting zone to &apos;work&apos;.
+success
+
+# nmcli con mod my-enp0s8 connection.zone work
+# nmcli con down my-enp0s8
+</code></pre><p>&#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19; &#xE08;&#xE30;&#xE1E;&#xE1A;&#xE27;&#xE48;&#xE32; zone work ,  zone public &#xE08;&#xE30; active &#xE40;&#xE19;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE08;&#xE32;&#xE01;&#xE16;&#xE39;&#xE01;&#xE19;&#xE49;&#xE33;&#xE44;&#xE1B;&#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE01;&#xE31;&#xE1A;  interface</p>
+<pre><code># firewall-cmd  --list-all-zones
+work (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: enp0s8
+  sources: 
+  services: dhcpv6-client ssh
+  ports: 
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  sourceports: 
+  icmp-blocks: 
+  rich rules: 
+
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: enp0s3
+  sources: 
+  services: dhcpv6-client ssh
+  ports: 
+  protocols: 
+  masquerade: no
+  forward-ports: 
+  sourceports: 
+  icmp-blocks: 
+  rich rules:
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ssh.html" class="navigation navigation-prev " aria-label="Previous page: การใช้งาน SSH">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ss-command.html" class="navigation navigation-next " aria-label="Next page: แนะนำคำสั่ง ss command">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)","level":"1.12","depth":1,"next":{"title":"แนะนำคำสั่ง ss command","level":"1.13","depth":1,"path":"ss-command.md","ref":"ss-command.md","articles":[]},"previous":{"title":"การใช้งาน SSH","level":"1.11","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux-linux-network-service.md","mtime":"2018-02-23T06:47:06.196Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

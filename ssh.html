@@ -1,0 +1,598 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>การใช้งาน SSH · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="linux-linux-network-service.html" />
+    
+    
+    <link rel="prev" href="mysql.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >การใช้งาน SSH</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;-ssh">&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; SSH</h2>
+<p>OpenSSH &#xE2B;&#xE23;&#xE37;&#xE2D; secure shell &#xE40;&#xE1B;&#xE47;&#xE19; protocol &#xE21;&#xE32;&#xE15;&#xE23;&#xE10;&#xE32;&#xE19; &#xE23;&#xE2D;&#xE07;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE40;&#xE02;&#xE49;&#xE32;&#xE16;&#xE36;&#xE07; &#xE41;&#xE1A;&#xE1A; remote &#xE42;&#xE14;&#xE22; service &#xE08;&#xE30;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19; &#xE17;&#xE35;&#xE48; port 22  &#xE42;&#xE14;&#xE22;&#xE1B;&#xE23;&#xE01;&#xE15;&#xE34; &#xE08;&#xE30;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07; package  openssh-server &#xE21;&#xE32;&#xE43;&#xE2B;&#xE49;&#xE2D;&#xE22;&#xE39;&#xE48;&#xE41;&#xE25;&#xE49;&#xE27; &#xE43;&#xE19;&#xE1A;&#xE17;&#xE19;&#xE35;&#xE49;&#xE08;&#xE30;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; Vagrantfile &#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; server 2 &#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; &#xE14;&#xE31;&#xE07;&#xE19;&#xE35;&#xE49;</p>
+<pre><code>cd  sshlab
+vi Vagrantfile
+</code></pre><pre><code># -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(&quot;2&quot;) do |config|
+  config.vm.box = &quot;bento/centos-7.3&quot;
+  config.vm.define &quot;client&quot; do |client| 
+     client.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.20&quot;
+     client.vm.hostname = &quot;client.example.com&quot;
+  end 
+
+  config.vm.define &quot;server&quot; do |server| 
+     server.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.30&quot;
+     server.vm.hostname = &quot;server.example.com&quot;
+  end 
+  config.vm.provider &quot;virtualbox&quot; do |vb|
+     vb.memory = &quot;1024&quot;
+     vb.cpus = &quot;1&quot;
+  end
+end
+</code></pre><p>&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19;&#xE01;&#xE47;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; vagrant up</p>
+<pre><code># vagrant up
+# vagrant status
+Current machine states:
+
+client                    running (virtualbox)
+server                    running (virtualbox)
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE40;&#xE02;&#xE49;&#xE32;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;</p>
+<p>&#xE40;&#xE19;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE08;&#xE32;&#xE01;&#xE21;&#xE35;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; server 2 &#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; &#xE14;&#xE31;&#xE07;&#xE19;&#xE31;&#xE49;&#xE19; &#xE15;&#xE2D;&#xE19;&#xE17;&#xE35;&#xE48;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; vagrant ssh &#xE08;&#xE30;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE40;&#xE1B;&#xE47;&#xE19;  vagrant ssh client ,  vagrant ssh server</p>
+<pre><code>$ vagrant ssh client -c &quot;ip a&quot;
+
+$ vagrant ssh server -c &quot;ip a&quot;
+</code></pre><p>&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE23;&#xE48;&#xE27;&#xE21;&#xE01;&#xE31;&#xE1A; option -c &quot;command&quot; &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE2A;&#xE48;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE44;&#xE1B;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19; &#xE43;&#xE19; VM &#xE17;&#xE35;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE41;&#xE25;&#xE30;&#xE41;&#xE2A;&#xE14;&#xE07;&#xE1C;&#xE25;&#xE2D;&#xE2D;&#xE01;&#xE17;&#xE32;&#xE07;&#xE2B;&#xE19;&#xE49;&#xE32;&#xE08;&#xE2D;</p>
+<p>&#xE02;&#xE2D;&#xE17;&#xE1A;&#xE17;&#xE27;&#xE19;&#xE2D;&#xE35;&#xE01;&#xE04;&#xE23;&#xE31;&#xE49;&#xE07;&#xE27;&#xE48;&#xE32; user &#xE1A;&#xE19; vm &#xE04;&#xE37;&#xE2D; vagrant  &#xE41;&#xE25;&#xE30;&#xE21;&#xE35; password &#xE04;&#xE37;&#xE2D; vagrant  &#xE19;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19;&#xE22;&#xE31;&#xE07;&#xE40;&#xE1B;&#xE47;&#xE19; sudo user &#xE2D;&#xE35;&#xE01;&#xE14;&#xE49;&#xE27;&#xE22;</p>
+<pre><code>$ vagrant ssh client
+
+$ ssh vagrant@192.168.33.30
+[vagrant@client ~]$ ssh vagrant@192.168.33.30
+The authenticity of host &apos;192.168.33.30 (192.168.33.30)&apos; can&apos;t be established.
+ECDSA key fingerprint is c0:1c:e4:82:6f:f4:6f:ba:38:9c:6c:23:40:fe:2d:4f.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &apos;192.168.33.30&apos; (ECDSA) to the list of known hosts.
+vagrant@192.168.33.30&apos;s password: 
+Last login: Mon Nov 20 14:20:11 2017 from 10.0.2.2
+[vagrant@server ~]$ 
+[vagrant@server ~]$ sudo cat /etc/ssh/ssh_host_ecdsa_key.pub 
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM9POfR+ntyTx9Uiu3sdtJ4QATIGsGoZx8wD602/0AK2Lx64lDjyLVNMq5V6bXtaiOIZtsxiyBwP7scoY9Is5Og= 
+[vagrant@server ~]$ exit
+
+
+[vagrant@client ~]$ cat ~/.ssh/known_hosts 
+192.168.33.30 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM9POfR+ntyTx9Uiu3sdtJ4QATIGsGoZx8wD602/0AK2Lx64lDjyLVNMq5V6bXtaiOIZtsxiyBwP7scoY9Is5Og=
+</code></pre><p>Verify package &#xE17;&#xE35;&#xE48;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27;&#xE02;&#xE2D;&#xE07;</p>
+<pre><code>[vagrant@client ~]$ rpm -qa | grep openssh
+openssh-clients-6.6.1p1-35.el7_3.x86_64
+openssh-6.6.1p1-35.el7_3.x86_64
+openssh-server-6.6.1p1-35.el7_3.x86_64
+
+
+[vagrant@client ~]$ sudo systemctl status sshd
+[vagrant@client ~]$ sudo systemctl status firewalld
+
+[vagrant@client ~]$ sudo firewall-cmd --permanent --add-service ssh
+[vagrant@client ~]$ sudo firewall-cmd --reload
+</code></pre><p>&#xE01;&#xE32;&#xE23; login &#xE14;&#xE49;&#xE27;&#xE22; public/private keys</p>
+<pre><code>[vagrant@client ~]$ ssh-keygen -t rsa
+[vagrant@client ~]$ ls -Z ~/.ssh/
+-rw-------. vagrant vagrant unconfined_u:object_r:ssh_home_t:s0 authorized_keys
+-rw-------. vagrant vagrant unconfined_u:object_r:ssh_home_t:s0 id_rsa
+-rw-r--r--. vagrant vagrant unconfined_u:object_r:ssh_home_t:s0 id_rsa.pub
+-rw-r--r--. vagrant vagrant unconfined_u:object_r:ssh_home_t:s0 known_hosts
+</code></pre><p>&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;  ssh &#xE40;&#xE02;&#xE49;&#xE32;&#xE2B;&#xE32;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; client &#xE40;&#xE2D;&#xE07;</p>
+<pre><code>[vagrant@client ~]$ ssh vagrant@localhost
+The authenticity of host &apos;localhost (::1)&apos; can&apos;t be established.
+ECDSA key fingerprint is c0:1c:e4:82:6f:f4:6f:ba:38:9c:6c:23:40:fe:2d:4f.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &apos;localhost&apos; (ECDSA) to the list of known hosts.
+vagrant@localhost&apos;s password: 
+Last login: Mon Nov 20 14:34:21 2017 from 10.0.2.2
+[vagrant@client ~]$ 
+
+[vagrant@client ~]$ exit
+logout
+Connection to localhost closed.
+[vagrant@client ~]$
+</code></pre><p>Copy public key (id_rsa.pub) &#xE44;&#xE1B;&#xE22;&#xE31;&#xE07; server &#xE17;&#xE35;&#xE48;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE40;&#xE1B;&#xE49;&#xE32;&#xE2B;&#xE21;&#xE32;&#xE22; &#xE41;&#xE25;&#xE30;&#xE40;&#xE21;&#xE37;&#xE48;&#xE2D;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23; ssh login &#xE2D;&#xE35;&#xE01;&#xE04;&#xE23;&#xE31;&#xE49;&#xE07; &#xE08;&#xE30;&#xE44;&#xE21;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE43;&#xE0A;&#xE49; password</p>
+<pre><code>[vagrant@client ~]$ cat ~/.ssh/id_rsa.pub  &gt;&gt; ~/.ssh/authorized_keys
+
+[vagrant@client ~]$ ssh vagrant@localhost
+Last login: Mon Nov 20 14:48:18 2017 from ::1
+[vagrant@client ~]$
+</code></pre><p><img src="assets/sshkey.png" alt=""></p>
+<p>copy  id_rsa.pub &#xE02;&#xE2D;&#xE07;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; client &#xE44;&#xE1B;&#xE22;&#xE31;&#xE07;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; server  &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; ssh-copy-id</p>
+<pre><code>$ ssh-copy-id vagrant@192.168.33.30
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+vagrant@192.168.33.30&apos;s password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   &quot;ssh &apos;vagrant@192.168.33.30&apos;&quot;
+and check to make sure that only the key(s) you wanted were added.
+[vagrant@client ~]$
+
+[vagrant@client ~]$ ssh vagrant@192.168.33.30 -C &quot;hostname&quot;
+server.example.com
+</code></pre><p>option -C  &quot;command_torun&quot;  &#xE40;&#xE1B;&#xE47;&#xE19;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE48;&#xE07; &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE44;&#xE1B;&#xE22;&#xE31;&#xE07;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; &#xE40;&#xE1B;&#xE49;&#xE32;&#xE2B;&#xE21;&#xE32;&#xE22; &#xE42;&#xE14;&#xE22;&#xE44;&#xE21;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07; &#xE40;&#xE02;&#xE49;&#xE32;&#xE44;&#xE1B;&#xE22;&#xE31;&#xE07;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07;</p>
+<pre><code>[vagrant@client ~]$ ssh vagrant@192.168.33.30 -C  &quot;sudo yum update -y&quot;
+</code></pre><p>&#xE1B;&#xE23;&#xE31;&#xE1A;&#xE41;&#xE15;&#xE48;&#xE07;&#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07; openssh-server &#xE42;&#xE14;&#xE22;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE17;&#xE33;&#xE44;&#xE14;&#xE49;&#xE1C;&#xE48;&#xE32;&#xE19;&#xE17;&#xE32;&#xE07;  /etc/ssh/sshd_config</p>
+<pre><code>[vagrant@server ~]$ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.orig
+[vagrant@server ~]$ sudo vi /etc/ssh/sshd_config
+</code></pre><p>&#xE04;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48;&#xE40;&#xE2B;&#xE47;&#xE19; &#xE08;&#xE30;&#xE1B;&#xE47;&#xE19;&#xE04;&#xE48;&#xE32; default &#xE22;&#xE01;&#xE15;&#xE31;&#xE27;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;</p>
+<pre><code>     17 #Port 22
+     49 #PermitRootLogin yes
+     50 #StrictModes yes
+     55 #PubkeyAuthentication yes
+     59 AuthorizedKeysFile      .ssh/authorized_keys
+
+     77 #PasswordAuthentication yes
+</code></pre><p>&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19; &#xE04;&#xE48;&#xE32; port &#xE41;&#xE25;&#xE30; save file</p>
+<pre><code>17 Port 2022
+</code></pre><pre><code>[root@server ~]# semanage port -a -t ssh_port_t -p tcp 2022
+[root@server ~]# semanage port -l  | grep 2022
+ssh_port_t                     tcp      2022, 22
+</code></pre><p>&#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE32;&#xE01;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19; port &#xE44;&#xE1B;&#xE41;&#xE25;&#xE49;&#xE27;&#xE43;&#xE2B;&#xE49;&#xE25;&#xE2D;&#xE07;&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE14;&#xE49;&#xE27;&#xE22;&#xE01;&#xE32;&#xE23; ssh &#xE08;&#xE32;&#xE01; client</p>
+<pre><code>[vagrant@client ~]$ ssh vagrant@192.168.33.30
+ssh: connect to host 192.168.33.30 port 22: Connection refused
+</code></pre><p>&#xE08;&#xE30;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE43;&#xE0A;&#xE49; option -p &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE23;&#xE30;&#xE1A;&#xE38; port</p>
+<pre><code>[vagrant@client ~]$ ssh vagrant@192.168.33.30 -p 2022
+Last login: Mon Nov 20 15:42:18 2017 from 192.168.33.20
+[vagrant@server ~]$
+</code></pre><p>&#xE15;&#xE31;&#xE49;&#xE07; password &#xE41;&#xE01;&#xE48; root &#xE43;&#xE19;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07; server</p>
+<pre><code>[vagrant@server ~]$ sudo su -
+[root@server ~]# passwd 
+Changing password for user root.
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@server ~]# exit
+[vagrant@server ~]$ exit
+</code></pre><p>&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A; login &#xE08;&#xE32;&#xE01; client &#xE14;&#xE49;&#xE27;&#xE22; user root &#xE41;&#xE25;&#xE30;&#xE43;&#xE0A;&#xE49; password</p>
+<pre><code>[vagrant@client ~]$ ssh root@192.168.33.30 -p 2022
+root@192.168.33.30&apos;s password: 
+Last login: Mon Nov 20 15:58:01 2017
+[root@server ~]#
+</code></pre><p>&#xE08;&#xE30;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE27;&#xE48;&#xE32; &#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16; login &#xE44;&#xE14;&#xE49;  &#xE04;&#xE23;&#xE32;&#xE27;&#xE19;&#xE35;&#xE49; &#xE43;&#xE2B;&#xE49;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;&#xE41;&#xE01;&#xE49;&#xE44;&#xE02; /etc/ssh/sshd_config &#xE41;&#xE25;&#xE30;&#xE1B;&#xE23;&#xE31;&#xE1A;&#xE41;&#xE15;&#xE48;&#xE07;&#xE04;&#xE48;&#xE32;&#xE14;&#xE31;&#xE07;&#xE19;&#xE35;&#xE49;</p>
+<pre><code>[root@server ~]# vi /etc/ssh/sshd_config
+
+     50 PermitRootLogin no
+
+[root@server ~]# systemctl restart sshd
+[root@server ~]# exit
+</code></pre><p>&#xE17;&#xE33;&#xE2A;&#xE2D;&#xE1A; login &#xE14;&#xE49;&#xE27;&#xE22; root &#xE2D;&#xE35;&#xE01;&#xE04;&#xE23;&#xE31;&#xE49;&#xE07; &#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE01;&#xE01;&#xE32;&#xE23;&#xE22;&#xE01;&#xE40;&#xE25;&#xE34;&#xE01;&#xE01;&#xE32;&#xE23;&#xE40;&#xE02;&#xE49;&#xE32;&#xE16;&#xE36;&#xE07;&#xE14;&#xE49;&#xE27;&#xE22; root</p>
+<pre><code>[vagrant@client ~]$ ssh root@192.168.33.30 -p 2022
+root@192.168.33.30&apos;s password: 
+Permission denied, please try again.
+root@192.168.33.30&apos;s password:
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mysql.html" class="navigation navigation-prev " aria-label="Previous page: การบริหารจัดการ ฐานข้อมูล ด้วย MySQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="linux-linux-network-service.html" class="navigation navigation-next " aria-label="Next page: การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"การใช้งาน SSH","level":"1.11","depth":1,"next":{"title":"การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)","level":"1.12","depth":1,"path":"linux-linux-network-service.md","ref":"linux-linux-network-service.md","articles":[]},"previous":{"title":"การบริหารจัดการ ฐานข้อมูล ด้วย MySQL","level":"1.10","depth":1,"path":"mysql.md","ref":"mysql.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ssh.md","mtime":"2018-02-23T06:47:06.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

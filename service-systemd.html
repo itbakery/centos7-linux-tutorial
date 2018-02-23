@@ -1,0 +1,517 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>การจัดการ Service ต่างๆ ด้วย Systemd · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="log-management-journalclt.html" />
+    
+    
+    <link rel="prev" href="package-build.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >การจัดการ Service ต่างๆ ด้วย Systemd</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;-service-&#xE15;&#xE48;&#xE32;&#xE07;&#xE46;-&#xE14;&#xE49;&#xE27;&#xE22;-systemd">&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23; Service &#xE15;&#xE48;&#xE32;&#xE07;&#xE46; &#xE14;&#xE49;&#xE27;&#xE22; Systemd</h2>
+<p><img src="assets/Systemctl_tw.png" alt=""></p>
+<p><strong>&#xE41;&#xE19;&#xE30;&#xE19;&#xE33; Systemd</strong></p>
+<p>Systemd &#xE04;&#xE37;&#xE2D; &#xE23;&#xE30;&#xE1A;&#xE1A;&#xE1A;&#xE23;&#xE34;&#xE2B;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE23;&#xE30;&#xE1A;&#xE1A; &#xE41;&#xE25;&#xE30; service &#xE15;&#xE48;&#xE32;&#xE07;&#xE46; &#xE43;&#xE19; Linux (system and service manager) &#xE44;&#xE14;&#xE49;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE2D;&#xE2D;&#xE01;&#xE41;&#xE1A;&#xE1A; &#xE43;&#xE2B;&#xE49;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE41;&#xE17;&#xE19;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE21;&#xE32;&#xE41;&#xE15;&#xE48;&#xE40;&#xE14;&#xE34;&#xE21; SysV init Scripts &#xE19;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19; &#xE22;&#xE31;&#xE07;&#xE21;&#xE35;&#xE25;&#xE31;&#xE01;&#xE29;&#xE13;&#xE30;&#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE17;&#xE35;&#xE48;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE23;&#xE39;&#xE1B;&#xE02;&#xE19;&#xE32;&#xE19; Parallel &#xE43;&#xE19;&#xE15;&#xE2D;&#xE19; &#xE40;&#xE23;&#xE34;&#xE48;&#xE21;&#xE15;&#xE49;&#xE19;&#xE01;&#xE32;&#xE23;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE23;&#xE30;&#xE1A;&#xE1A; &#xE41;&#xE25;&#xE30; &#xE02;&#xE13;&#xE30;&#xE02;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23; Boot &#xE23;&#xE30;&#xE1A;&#xE1A; &#xE17;&#xE33;&#xE43;&#xE2B;&#xE49; Linux Boot &#xE44;&#xE14;&#xE49;&#xE40;&#xE23;&#xE47;&#xE27;&#xE01;&#xE27;&#xE48;&#xE32;&#xE40;&#xE14;&#xE34;&#xE21; &#xE42;&#xE14;&#xE22;&#xE17;&#xE35;&#xE48; Systemd &#xE08;&#xE30;&#xE2D;&#xE2D;&#xE01;&#xE41;&#xE1A;&#xE1A;&#xE43;&#xE2B;&#xE49;&#xE2A;&#xE48;&#xE27;&#xE19;&#xE15;&#xE48;&#xE32;&#xE07;&#xE46; &#xE2B;&#xE23;&#xE37;&#xE2D;&#xE17;&#xE35;&#xE48;&#xE40;&#xE23;&#xE35;&#xE22;&#xE01;&#xE27;&#xE48;&#xE32; units  &#xE17;&#xE35;&#xE48;&#xE20;&#xE32;&#xE22;&#xE43;&#xE19; &#xE41;&#xE15;&#xE48;&#xE25;&#xE30; unit &#xE08;&#xE30;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14;&#xE44;&#xE27;&#xE49;&#xE43;&#xE19; Configuration files  &#xE43;&#xE19; directory</p>
+<p><strong>&#xE0A;&#xE19;&#xE34;&#xE14; Systemd Unit Types &#xE44;&#xE14;&#xE49;&#xE41;&#xE01;&#xE48;</strong></p>
+<p><img src="assets/Screen Shot 2560-11-21 at 02.46.55.png" alt=""></p>
+<p><strong>&#xE15;&#xE33;&#xE41;&#xE2B;&#xE19;&#xE48;&#xE07;&#xE02;&#xE2D;&#xE07; unit file</strong></p>
+<p><img src="assets/filelocation.png" alt=""></p>
+<p>&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;</p>
+<pre><code># systemctl list-units --type service
+# systemctl list-units --type target
+</code></pre><p>&#xE42;&#xE14;&#xE22;&#xE1B;&#xE23;&#xE01;&#xE15;&#xE34; &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; systemctl list-utils &#xE08;&#xE30; display &#xE40;&#xE09;&#xE1E;&#xE32;&#xE30; &#xE17;&#xE35;&#xE48; active &#xE2D;&#xE22;&#xE39;&#xE48; &#xE40;&#xE17;&#xE48;&#xE32;&#xE19;&#xE31;&#xE49;&#xE19; &#xE2B;&#xE32;&#xE01;&#xE40;&#xE23;&#xE32;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39;&#xE17;&#xE35;&#xE48; unit &#xE17;&#xE35;&#xE48;&#xE16;&#xE39;&#xE01;&#xE42;&#xE2B;&#xE25;&#xE14; &#xE42;&#xE14;&#xE22;&#xE17;&#xE35;&#xE48;&#xE44;&#xE21;&#xE48;&#xE44;&#xE14;&#xE49;&#xE2A;&#xE19;&#xE43;&#xE08; state</p>
+<pre><code># systemctl list-units --type service --all
+</code></pre><p><img src="assets/Screen Shot 2560-11-21 at 03.14.47.png" alt=""><strong>&#xE04;&#xE27;&#xE32;&#xE21;&#xE2B;&#xE21;&#xE32;&#xE22;&#xE02;&#xE2D;&#xE07;&#xE41;&#xE15;&#xE48;&#xE25;&#xE30; colume</strong></p>
+<ol>
+<li>Unit &#x2013; the service name</li>
+<li>Load &#x2013; gives status of the service (such as Loaded, Failed, etc.)</li>
+<li>Active &#x2013; indicates whether the status of the service is Active</li>
+<li>Description &#x2013; textual description of the unit</li>
+</ol>
+<pre><code># yum instll psmisc
+# pstree
+systemd&#x2500;&#x252C;&#x2500;NetworkManager&#x2500;&#x252C;&#x2500;dhclient
+        &#x2502;                &#x2514;&#x2500;2*[{NetworkManager}]
+        &#x251C;&#x2500;VBoxService&#x2500;&#x2500;&#x2500;7*[{VBoxService}]
+        &#x251C;&#x2500;agetty
+        &#x251C;&#x2500;anacron
+        &#x251C;&#x2500;auditd&#x2500;&#x2500;&#x2500;{auditd}
+        &#x251C;&#x2500;chronyd
+        &#x251C;&#x2500;crond
+        &#x251C;&#x2500;dbus-daemon&#x2500;&#x2500;&#x2500;{dbus-daemon}
+        &#x251C;&#x2500;gssproxy&#x2500;&#x2500;&#x2500;5*[{gssproxy}]
+        &#x251C;&#x2500;httpd&#x2500;&#x2500;&#x2500;4*[httpd&#x2500;&#x2500;&#x2500;26*[{httpd}]]
+        &#x251C;&#x2500;lvmetad
+        &#x251C;&#x2500;master&#x2500;&#x252C;&#x2500;pickup
+        &#x2502;        &#x2514;&#x2500;qmgr
+        &#x251C;&#x2500;polkitd&#x2500;&#x2500;&#x2500;5*[{polkitd}]
+        &#x251C;&#x2500;rsyslogd&#x2500;&#x2500;&#x2500;2*[{rsyslogd}]
+        &#x251C;&#x2500;sshd&#x2500;&#x2500;&#x2500;sshd&#x2500;&#x2500;&#x2500;sshd&#x2500;&#x2500;&#x2500;bash&#x2500;&#x2500;&#x2500;sudo&#x2500;&#x2500;&#x2500;su&#x2500;&#x2500;&#x2500;bash&#x2500;&#x2500;&#x2500;pstree
+        &#x251C;&#x2500;systemd-journal
+        &#x251C;&#x2500;systemd-logind
+        &#x251C;&#x2500;systemd-udevd
+        &#x2514;&#x2500;tuned&#x2500;&#x2500;&#x2500;4*[{tuned}]
+</code></pre><p>&#xE40;&#xE21;&#xE37;&#xE48;&#xE2D;&#xE14;&#xE39; pstree &#xE08;&#xE30;&#xE2A;&#xE31;&#xE07;&#xE40;&#xE01;&#xE15;&#xE38;&#xE40;&#xE2B;&#xE47;&#xE19;&#xE27;&#xE48;&#xE32; systemd &#xE40;&#xE1B;&#xE47;&#xE19; Process 1   &#xE43;&#xE19;&#xE40;&#xE27;&#xE2D;&#xE23;&#xE4C;&#xE0A;&#xE31;&#xE48;&#xE19; &#xE43;&#xE2B;&#xE21;&#xE48;&#xE46;&#xE46; &#xE02;&#xE2D;&#xE07; Linux &#xE08;&#xE30;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27;&#xE02;&#xE2D;&#xE07;&#xE01;&#xE31;&#xE1A; systemd &#xE40;&#xE21;&#xE37;&#xE48;&#xE2D; Application &#xE2B;&#xE23;&#xE37;&#xE2D; package &#xE17;&#xE35;&#xE48;&#xE19;&#xE33;&#xE21;&#xE32;&#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07; &#xE19;&#xE31;&#xE49;&#xE19; &#xE08;&#xE30;&#xE21;&#xE35; file unit</p>
+<pre><code># yum install mariadb mariadb-server
+# rpm -qa | grep mariadb-server
+mariadb-server-5.5.56-2.el7.x86_64
+
+# rpm -ql mariadb-server-5.5.56-2.el7.x86_64  | grep service
+/usr/lib/systemd/system/mariadb.service
+
+# cat /usr/lib/systemd/system/mariadb.service
+
+# systemctl start mariadb.service
+# systemctl enable mariadb.service
+</code></pre><p>Target &#xE19;&#xE33;&#xE21;&#xE32;&#xE04;&#xE27;&#xE1A;&#xE04;&#xE38;&#xE21; Start Level</p>
+<ol>
+<li>rescue.target</li>
+<li>multi-user.target</li>
+<li>graphical.target</li>
+<li>reboot.target</li>
+</ol>
+<pre><code># systemctl get-default
+multi-user.target
+</code></pre><p><strong>&#xE01;&#xE32;&#xE23; Starting &#xE41;&#xE25;&#xE30; Stopping Service</strong></p>
+<p>&#xE01;&#xE32;&#xE23; start systemd service  &#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; start</p>
+<pre><code># systemctl start application.service
+# systemctl start application
+
+# systemctl stop application
+
+# systemctl enable application
+# systemctl disable application
+
+# systemctl mask application
+# systemctl unmask application
+</code></pre><p>&#xE2B;&#xE32;&#xE01;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE41;&#xE1B;&#xE25;&#xE07;&#xE41;&#xE04;&#xE48; configuration file &#xE44;&#xE21;&#xE48;&#xE08;&#xE33;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE15;&#xE49;&#xE2D;&#xE07; restart service &#xE41;&#xE04;&#xE48; reload </p>
+<pre><code># systemctl reload application.service
+</code></pre><p>&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39;&#xE23;&#xE32;&#xE22;&#xE25;&#xE30;&#xE40;&#xE2D;&#xE35;&#xE22;&#xE14;&#xE17;&#xE35;&#xE48;&#xE2D;&#xE22;&#xE39;&#xE48;&#xE43;&#xE19;&#xE41;&#xE15;&#xE48;&#xE25;&#xE30; systemd file &#xE43;&#xE0A;&#xE49; &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; cat</p>
+<pre><code># systemctl cat mariadb.service
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="package-build.html" class="navigation navigation-prev " aria-label="Previous page: การติดตั้ง package ด้วยการ Build">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="log-management-journalclt.html" class="navigation navigation-next " aria-label="Next page: Log Management ด้วย Journalclt">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"การจัดการ Service ต่างๆ ด้วย Systemd","level":"1.15","depth":1,"next":{"title":"Log Management ด้วย Journalclt","level":"1.16","depth":1,"path":"log-management-journalclt.md","ref":"log-management-journalclt.md","articles":[]},"previous":{"title":"การติดตั้ง package ด้วยการ Build","level":"1.14","depth":1,"path":"package-build.md","ref":"package-build.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"service-systemd.md","mtime":"2018-02-23T06:47:06.248Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

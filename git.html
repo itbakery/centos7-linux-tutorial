@@ -1,0 +1,756 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>การใช้งาน   GIT · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="log-management-journalclt.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >การใช้งาน   GIT</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; GIT</p>
+<p>&#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE1E;&#xE31;&#xE12;&#xE19;&#xE32; Software &#xE1B;&#xE31;&#xE08;&#xE08;&#xE38;&#xE1A;&#xE31;&#xE19; &#xE01;&#xE32;&#xE23;&#xE04;&#xE27;&#xE1A;&#xE04;&#xE38;&#xE21;&#xE40;&#xE27;&#xE2D;&#xE23;&#xE4C;&#xE0A;&#xE31;&#xE48;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE1E;&#xE31;&#xE12;&#xE19;&#xE32; &#xE2B;&#xE23;&#xE37;&#xE2D;  Version Control  &#xE21;&#xE35;&#xE1A;&#xE17;&#xE1A;&#xE32;&#xE17;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE22;&#xE34;&#xE48;&#xE07;&#xE15;&#xE48;&#xE2D;&#xE01;&#xE32;&#xE23;&#xE1E;&#xE31;&#xE12;&#xE19;&#xE32; &#xE41;&#xE25;&#xE30;&#xE22;&#xE31;&#xE07;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE17;&#xE35;&#xE48;&#xE08;&#xE30;&#xE17;&#xE33;&#xE43;&#xE2B;&#xE49;&#xE19;&#xE31;&#xE01;&#xE1E;&#xE31;&#xE12;&#xE19;&#xE32;&#xE2B;&#xE25;&#xE32;&#xE22;&#xE04;&#xE19;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE17;&#xE33;&#xE07;&#xE32;&#xE19;&#xE23;&#xE48;&#xE27;&#xE21;&#xE01;&#xE31;&#xE19;&#xE44;&#xE14;&#xE49;</p>
+<p><strong>Lab 1   &#xE15;&#xE34;&#xE14;&#xE15;&#xE31;&#xE49;&#xE07;</strong></p>
+<pre><code># yum groupinstall &quot;Development Tools&quot;
+# yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
+# yum install git
+# git --version
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE15;&#xE31;&#xE49;&#xE07;&#xE04;&#xE48;&#xE32; &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; Account&apos;s default identity</p>
+<pre><code> git config --global user.name &quot;Sawangpong Muadphet&quot;
+ git config --global user.email &quot;sawangpongm@gmail.com&quot;
+ git config --global user.editor &quot;vim&quot;
+</code></pre><p><strong>Lab2 &#xE2A;&#xE16;&#xE32;&#xE19;&#xE30;&#xE2B;&#xE23;&#xE37;&#xE2D; stage &#xE15;&#xE48;&#xE32;&#xE07;&#xE46;</strong></p>
+<p><img src="assets/gitworkflow.PNG" alt=""></p>
+<p><strong>Lab3 &#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; project director &#xE41;&#xE25;&#xE30;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; Repository</strong></p>
+<pre><code>mkdir hello
+cd hello
+echo &quot;Hello, World&quot;  &gt; hello.txt
+git init 
+Initialized empty Git repository in /home/lookmee/hello/.git/
+
+
+git add hello.txt
+git status
+git commit -m &quot;First Commit&quot;
+</code></pre><blockquote>
+<p>use tmux separate terminal in two pane, run script below in pane 2</p>
+</blockquote>
+<pre><code>while :
+do 
+    clear
+    tree -a
+    sleep 1
+done
+</code></pre><p><img src="assets/tmux2.PNG" alt=""></p>
+<blockquote>
+<p>&#xE2B;&#xE23;&#xE37;&#xE2D; &#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; watch</p>
+</blockquote>
+<pre><code>watch -n1 tree -a
+</code></pre><p><img src="assets/gitobject.png" alt=""></p>
+<p>&#xE1C;&#xE25;&#xE25;&#xE31;&#xE1E;&#xE17;&#xE4C;</p>
+<pre><code>$ git commit -m &quot;First Commit&quot;
+[master (root-commit) a659868] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+</code></pre><p>Lab4 &#xE15;&#xE23;&#xE27;&#xE08;&#xE2A;&#xE2D;&#xE1A;&#xE2A;&#xE16;&#xE32;&#xE19;&#xE30;</p>
+<pre><code>$ git status
+On branch master
+nothing to commit, working tree clean
+
+$ git log
+commit a65986862a02f080b487ffb5ef99e051ad3d9c07 (HEAD -&gt; master)
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 03:53:21 2017 +0700
+
+    First Commit
+</code></pre><p><strong>Lab5 &#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE41;&#xE1B;&#xE25;&#xE07;  file &#xE2A;&#xE16;&#xE32;&#xE19;&#xE30; modifed</strong></p>
+<pre><code> $ echo &quot;We change document&quot; &gt;&gt; hello.txt
+
+ $ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   hello.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+
+//add change 
+$ git add .
+
+$ git commit -m &quot;Second Commit&quot;
+[master 5c64484] Second Commit
+ 1 file changed, 1 insertion(+)
+
+$ git log --pretty=oneline
+5c6448485bdbe1f9b5b8d2962af0ed00982ee226 (HEAD -&gt; master) Second Commit
+a65986862a02f080b487ffb5ef99e051ad3d9c07 First Commit
+
+$ git log --pretty=format:&apos;%h %ad | %s%d [%an]&apos; --graph --date=short
+* 5c64484 2017-10-28 | Second Commit (HEAD -&gt; master) [Sawangpong Muadphet]
+* a659868 2017-10-28 | First Commit [Sawangpong Muadphet]
+</code></pre><p><strong>Lab 6  &#xE01;&#xE32;&#xE23;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; Common Aliases</strong></p>
+<p>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; file &#xE0A;&#xE37;&#xE48;&#xE2D;&#xE27;&#xE48;&#xE32; .gitconfig  &#xE44;&#xE1B;&#xE44;&#xE27;&#xE49;&#xE43;&#xE19; $HOME directory</p>
+<pre><code>cd ~
+vim ~/.gitconfig
+//
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  df = diff
+  hist = log --pretty=format:&apos;%h %ad | %s%d [%an]&apos; --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+</code></pre><p>&#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19;&#xE43;&#xE2B;&#xE49;&#xE1B;&#xE34;&#xE14; terminal &#xE41;&#xE25;&#xE30;&#xE40;&#xE1B;&#xE34;&#xE14;&#xE02;&#xE36;&#xE49;&#xE19;&#xE21;&#xE32;&#xE43;&#xE2B;&#xE21;&#xE48;</p>
+<pre><code>$ git st
+$ git br
+$ git hist
+$ git df
+</code></pre><p><strong>Lab 7 checkout code</strong></p>
+<pre><code>$ git log
+commit 5c6448485bdbe1f9b5b8d2962af0ed00982ee226 (HEAD -&gt; master)
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 03:59:34 2017 +0700
+
+    Second Commit
+
+commit a65986862a02f080b487ffb5ef99e051ad3d9c07
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 03:53:21 2017 +0700
+
+    First Commit
+
+$ ls                 #&lt;-- &#xE14;&#xE39;&#xE44;&#xE1F;&#xE25;&#xE4C;
+$ cat hello.txt
+Hello, World
+We change document
+
+$ git checkout a65986                                     # git checkout &lt;hash&gt;
+
+Note: checking out &apos;a65986&apos;.
+
+You are in &apos;detached HEAD&apos; state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &lt;new-branch-name&gt;
+
+HEAD is now at a659868... First Commit
+
+$ cat hello.txt
+Hello, World
+</code></pre><p>&#xE01;&#xE25;&#xE31;&#xE1A;&#xE44;&#xE1B;&#xE22;&#xE31;&#xE07; &#xE40;&#xE27;&#xE2D;&#xE23;&#xE4C;&#xE0A;&#xE31;&#xE48;&#xE19; &#xE25;&#xE48;&#xE32;&#xE2A;&#xE38;&#xE14; &#xE43;&#xE19; master branch</p>
+<pre><code>$ git checkout master
+$ cat hello.txt
+</code></pre><p>Lab 8 Tagging Versions</p>
+<p>&#xE40;&#xE23;&#xE32;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16; &#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; tag  &#xE14;&#xE49;&#xE27;&#xE22;&#xE0A;&#xE37;&#xE48;&#xE2D; &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE43;&#xE0A;&#xE49;&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE2D;&#xE49;&#xE32;&#xE07;&#xE2D;&#xE34;&#xE07; &#xE15;&#xE48;&#xE2D;&#xE44;&#xE1B;</p>
+<pre><code>$ git tag v1
+$ git tag                                  #--&gt;  list &#xE14;&#xE39; tag
+$ cat hello.txt
+
+$ git log
+
+$ git log
+commit 5c6448485bdbe1f9b5b8d2962af0ed00982ee226 (HEAD -&gt; master, tag: v1)     #&lt;-- history &#xE14;&#xE39; tag &#xE44;&#xE14;&#xE49;
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 03:59:34 2017 +0700
+
+    Second Commit
+
+$ git checkout v1^                         #--&gt;  ( ^ )  &#xE2B;&#xE21;&#xE32;&#xE22;&#xE16;&#xE36;&#xE07;  &quot;parent of v1&quot; 
+Note: checking out &apos;v1^&apos;.
+
+You are in &apos;detached HEAD&apos; state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &lt;new-branch-name&gt;
+
+HEAD is now at a659868... First Commit
+
+
+$ cat hello.txt
+</code></pre><p>&#xE2B;&#xE32;&#xE01;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23; &#xE25;&#xE1A; tag</p>
+<pre><code>git tag -d v1
+</code></pre><p><strong>Lab 8 &#xE41;&#xE01;&#xE49;&#xE44;&#xE02;&#xE44;&#xE1F;&#xE25;&#xE4C; &#xE43;&#xE19; local change &#xE2B;&#xE23;&#xE37;&#xE2D; working directory &#xE01;&#xE48;&#xE2D;&#xE19;&#xE2A;&#xE16;&#xE32;&#xE19;&#xE30; staging &#xE2B;&#xE23;&#xE37;&#xE2D;&#xE01;&#xE48;&#xE2D;&#xE19; git add -a</strong></p>
+<p>&#xE1A;&#xE32;&#xE07;&#xE04;&#xE23;&#xE31;&#xE49;&#xE07;&#xE40;&#xE23;&#xE32;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE22;&#xE01;&#xE40;&#xE25;&#xE34;&#xE01;&#xE01;&#xE32;&#xE23;&#xE41;&#xE01;&#xE49;&#xE43;&#xE02;&#xE01;&#xE25;&#xE31;&#xE1A;&#xE44;&#xE1B;&#xE43;&#xE0A;&#xE49;  commit &#xE25;&#xE48;&#xE32;&#xE2A;&#xE38;&#xE14; &#xE17;&#xE33;&#xE44;&#xE14;&#xE49;&#xE42;&#xE14;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  checkout</p>
+<pre><code>vim hello.txt
+</code></pre><p><img src="assets/revert.PNG" alt=""></p>
+<pre><code>$ cat hello.txt
+Hello, World
+We change document
+This line is mistack want to revert
+
+$ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   hello.txt
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+</code></pre><p>&#xE08;&#xE30;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE27;&#xE48;&#xE32; file  hello.txt &#xE21;&#xE35;&#xE01;&#xE32;&#xE23; modify  &#xE41;&#xE15;&#xE48;&#xE22;&#xE31;&#xE07;&#xE44;&#xE21;&#xE48;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23; stage</p>
+<p>&#xE2A;&#xE31;&#xE48;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; diff &#xE23;&#xE30;&#xE2B;&#xE27;&#xE48;&#xE32;&#xE07; working directory &#xE41;&#xE25;&#xE30; repository &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; git diff    &#xE2B;&#xE23;&#xE37;&#xE2D;  git diff head</p>
+<pre><code> $ git diff
+diff --git a/hello.txt b/hello.txt
+index 6b4508b..7eb0c84 100644
+--- a/hello.txt
++++ b/hello.txt
+@@ -1,2 +1,3 @@
+ Hello, World
+ We change document
++This line is mistack want to revert
+
+lookmee@DESKTOP-GG7EU61 MSYS ~/hello
+$ git diff HEAD
+diff --git a/hello.txt b/hello.txt
+index 6b4508b..7eb0c84 100644
+--- a/hello.txt
++++ b/hello.txt
+@@ -1,2 +1,3 @@
+ Hello, World
+ We change document
++This line is mistack want to revert
+</code></pre><p>&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; checkout &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D; &#xE17;&#xE33;&#xE01;&#xE32;&#xE23; checkout file &#xE2D;&#xE2D;&#xE01;&#xE21;&#xE32;&#xE08;&#xE32;&#xE01; repository</p>
+<pre><code>$ git checkout hello.txt
+
+$ cat hello.txt
+Hello, World
+We change document
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+</code></pre><p><strong>Lab 9 &#xE41;&#xE01;&#xE49;&#xE44;&#xE02;&#xE44;&#xE1F;&#xE25;&#xE4C; &#xE43;&#xE19; stage change &#xE2B;&#xE23;&#xE37;&#xE2D; stage status &#xE01;&#xE48;&#xE2D;&#xE19;&#xE2A;&#xE16;&#xE32;&#xE19;&#xE30; commit  &#xE01;&#xE48;&#xE2D;&#xE19; git commit</strong></p>
+<p>&#xE40;&#xE23;&#xE32;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE41;&#xE01;&#xE49;&#xE44;&#xE02;  file  &#xE01;&#xE25;&#xE31;&#xE1A;&#xE04;&#xE37;&#xE19;&#xE21;&#xE32;&#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE01;&#xE17;&#xE35;&#xE48;&#xE40;&#xE23;&#xE32;&#xE44;&#xE14;&#xE49; stage &#xE41;&#xE25;&#xE49;&#xE27;</p>
+<pre><code>vim hello.txt
+//
+Hello, World
+We change document
+This is unwant line but we staged already I do run git add ,not yet commit
+</code></pre><p><img src="assets/revert2.PNG" alt=""></p>
+<pre><code>$ git add hello.txt
+
+$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        modified:   hello.txt
+</code></pre><p>&#xE2A;&#xE16;&#xE32;&#xE19;&#xE30; &#xE40;&#xE1B;&#xE47;&#xE19; stage &#xE40;&#xE23;&#xE35;&#xE22;&#xE1A;&#xE23;&#xE49;&#xE2D;&#xE22;&#xE41;&#xE25;&#xE49;&#xE27; &#xE41;&#xE25;&#xE30; &#xE1E;&#xE23;&#xE49;&#xE2D;&#xE21;&#xE17;&#xE35;&#xE48;&#xE08;&#xE30;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23; commit  &#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE41;&#xE01;&#xE49;&#xE44;&#xE02;&#xE44;&#xE14;&#xE49; &#xE42;&#xE14;&#xE22;</p>
+<pre><code>$ git reset HEAD hello.txt
+Unstaged changes after reset:
+M       hello.txt
+</code></pre><p>&#xE40;&#xE1B;&#xE47;&#xE19;&#xE01;&#xE32;&#xE23; clear staging area &#xE17;&#xE35;&#xE48;&#xE40;&#xE23;&#xE32;&#xE1E;&#xE36;&#xE48;&#xE07;&#xE17;&#xE35;&#xE48;&#xE08;&#xE30; staged &#xE44;&#xE1B;</p>
+<blockquote>
+<p>&#xE42;&#xE14;&#xE22;&#xE17;&#xE31;&#xE48;&#xE27;&#xE44;&#xE1B; &#xE01;&#xE32;&#xE23; &#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; reset  &#xE19;&#xE31;&#xE49;&#xE19;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE01;&#xE32;&#xE23; clear  stage  &#xE40;&#xE17;&#xE48;&#xE32;&#xE19;&#xE31;&#xE49;&#xE19; &#xE41;&#xE15;&#xE48;&#xE2A;&#xE34;&#xE48;&#xE07;&#xE17;&#xE35;&#xE48;&#xE40;&#xE23;&#xE32;&#xE44;&#xE21;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE22;&#xE31;&#xE07;&#xE04;&#xE07;&#xE2D;&#xE22;&#xE39;&#xE48;&#xE43;&#xE19; working directory</p>
+</blockquote>
+<pre><code>$ git diff HEAD
+diff --git a/hello.txt b/hello.txt
+index 6b4508b..87540c2 100644
+--- a/hello.txt
++++ b/hello.txt
+@@ -1,2 +1,3 @@
+ Hello, World
+ We change document
++This is unwant line but we staged already I do run git add ,not yet commit
+
+// &#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  checkout &#xE2D;&#xE35;&#xE01;&#xE04;&#xE23;&#xE31;&#xE49;&#xE07;
+$ git checkout hello.txt
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+</code></pre><p><strong>Lab 10 &#xE41;&#xE01;&#xE49;&#xE44;&#xE02;&#xE44;&#xE1F;&#xE25;&#xE4C; &#xE17;&#xE35;&#xE48;&#xE44;&#xE14;&#xE49; commit &#xE40;&#xE23;&#xE35;&#xE22;&#xE1A;&#xE23;&#xE49;&#xE2D;&#xE22;&#xE41;&#xE25;&#xE49;&#xE27;</strong></p>
+<pre><code>vim hello.txt
+//
+Hello, World
+We change document
+This is unwnat line but we commit already
+</code></pre><p><img src="assets/revert3.PNG" alt=""></p>
+<pre><code>$ git add hello.txt
+
+$ git commit -m &quot;commit hello.txt&quot;
+[master 19a8d96] commit hello.txt
+ 1 file changed, 1 insertion(+)
+</code></pre><p>&#xE40;&#xE23;&#xE32;&#xE44;&#xE14;&#xE49;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23; commit &#xE2B;&#xE23;&#xE37;&#xE2D; save &#xE44;&#xE1B;&#xE22;&#xE31;&#xE07; repository &#xE40;&#xE23;&#xE35;&#xE22;&#xE1A;&#xE23;&#xE49;&#xE2D;&#xE22;&#xE41;&#xE25;&#xE49;&#xE27; &#xE40;&#xE23;&#xE32;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE17;&#xE35;&#xE48; &#xE41;&#xE01;&#xE49;&#xE44;&#xE02; &#xE2B;&#xE23;&#xE37;&#xE2D; revert commit</p>
+<pre><code>$ git revert HEAD                              # &#xE08;&#xE30;&#xE40;&#xE1B;&#xE34;&#xE14; editor &#xE21;&#xE32;&#xE43;&#xE2B;&#xE49;&#xE40;&#xE23;&#xE32;&#xE41;&#xE01;&#xE49;&#xE44;&#xE02; commit
+//&#xE2B;&#xE23;&#xE37;&#xE2D;
+$ git revert HEAD --no-edit
+
+[master 559862d] Revert &quot;commit hello.txt&quot;
+ 1 file changed, 1 deletion(-)
+
+$ git log
+commit 559862d00120cbbe6aabc36e890bd1a546cb2742 (HEAD -&gt; master)
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 11:44:36 2017 +0700
+
+    Revert &quot;commit hello.txt&quot;                    # &lt;-- commit auto 
+
+    This reverts commit 19a8d9638e582e67d87f8f48c28a112768240d13.
+
+commit 19a8d9638e582e67d87f8f48c28a112768240d13
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 11:40:53 2017 +0700
+
+    commit hello.txt
+
+commit 5c6448485bdbe1f9b5b8d2962af0ed00982ee226 (tag: v1)
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 03:59:34 2017 +0700
+
+    Second Commit
+
+commit a65986862a02f080b487ffb5ef99e051ad3d9c07 (tag: rm)
+Author: Sawangpong Muadphet &lt;sawangpongm@gmail.com&gt;
+Date:   Sat Oct 28 03:53:21 2017 +0700
+
+    First Commit
+</code></pre><p>&#xE25;&#xE2D;&#xE07;&#xE14;&#xE39; history</p>
+<pre><code>$ git hist
+* 559862d 2017-10-28 | Revert &quot;commit hello.txt&quot; (HEAD -&gt; master) [Sawangpong Muadphet]
+* 19a8d96 2017-10-28 | commit hello.txt [Sawangpong Muadphet]
+* 5c64484 2017-10-28 | Second Commit (tag: v1) [Sawangpong Muadphet]
+* a659868 2017-10-28 | First Commit (tag: rm) [Sawangpong Muadphet]
+</code></pre><p>working direct &#xE01;&#xE47;&#xE08;&#xE30;&#xE01;&#xE25;&#xE31;&#xE1A;&#xE04;&#xE37;&#xE19;&#xE21;&#xE32;&#xE14;&#xE49;&#xE27;&#xE22;</p>
+<pre><code>$ cat hello.txt
+Hello, World
+We change document
+</code></pre><p>Lab 11 visualization Git</p>
+<p>&#xE44;&#xE1B;&#xE22;&#xE31;&#xE07; website   <a href="http://git-school.github.io/visualizing-git/" target="_blank">http://git-school.github.io/visualizing-git/<img src="assets/visualgit.PNG" alt=""></a>&#xE17;&#xE33;</p>
+<p>&#xE43;&#xE2B;&#xE49;&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; &#xE14;&#xE31;&#xE07;&#xE23;&#xE39;&#xE1B; &#xE42;&#xE14;&#xE22;&#xE1E;&#xE34;&#xE21; &#xE43;&#xE19;&#xE0A;&#xE48;&#xE2D;&#xE07; &#xE25;&#xE48;&#xE32;&#xE07;&#xE2A;&#xE38;&#xE14; &#xE41;&#xE25;&#xE49;&#xE27; enter &#xE17;&#xE35;&#xE25;&#xE30;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;</p>
+<p><img src="assets/visualgitadd.png" alt=""></p>
+<p>&#xE40;&#xE1B;&#xE34;&#xE14;&#xE40;&#xE27;&#xE1B; &#xE44;&#xE1B;&#xE17;&#xE35;&#xE48; <a href="https://try.github.io/levels/1/challenges/1" target="_blank">https://try.github.io/levels/1/challenges/1</a> &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;</p>
+<p><img src="assets/trygit.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="log-management-journalclt.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Log Management ด้วย Journalclt">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"การใช้งาน   GIT","level":"1.17","depth":1,"previous":{"title":"Log Management ด้วย Journalclt","level":"1.16","depth":1,"path":"log-management-journalclt.md","ref":"log-management-journalclt.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git.md","mtime":"2018-02-23T06:47:06.187Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

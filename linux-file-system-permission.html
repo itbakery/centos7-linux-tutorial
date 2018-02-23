@@ -1,0 +1,650 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>โครงสร้าง Linux File System และ Permission · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="logical-volume.html" />
+    
+    
+    <link rel="prev" href="password.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >โครงสร้าง Linux File System และ Permission</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#xE42;&#xE04;&#xE23;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;-linux-file-system-&#xE41;&#xE25;&#xE30;-permission">&#xE42;&#xE04;&#xE23;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; Linux File System &#xE41;&#xE25;&#xE30; Permission</h3>
+<p>File System  &#xE17;&#xE33;&#xE2B;&#xE19;&#xE49;&#xE32;&#xE04;&#xE27;&#xE1A;&#xE04;&#xE38;&#xE21;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE40;&#xE01;&#xE47;&#xE1A;  &#xE44;&#xE1F;&#xE25;&#xE4C;&#xE15;&#xE48;&#xE32;&#xE07;&#xE46; &#xE44;&#xE1B;&#xE40;&#xE01;&#xE47;&#xE1A;&#xE44;&#xE27;&#xE49;&#xE43;&#xE19; Partition &#xE02;&#xE2D;&#xE07; hardisk    &#xE42;&#xE14;&#xE22;&#xE08;&#xE30;&#xE17;&#xE33;&#xE2B;&#xE19;&#xE49;&#xE32;&#xE17;&#xE35;&#xE48;&#xE41;&#xE1A;&#xE48;&#xE07; &#xE44;&#xE1F;&#xE25;&#xE4C;&#xE43;&#xE2B;&#xE0D;&#xE48;&#xE46; &#xE2D;&#xE2D;&#xE01;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE2A;&#xE48;&#xE27;&#xE19;&#xE40;&#xE25;&#xE47;&#xE01;&#xE46; &#xE41;&#xE25;&#xE30;&#xE19;&#xE33;&#xE44;&#xE1B;&#xE40;&#xE01;&#xE47;&#xE1A;&#xE44;&#xE27;&#xE49;&#xE43;&#xE19;&#xE2A;&#xE48;&#xE27;&#xE19;&#xE15;&#xE48;&#xE32;&#xE07;&#xE46; &#xE02;&#xE2D;&#xE07; hardisk</p>
+<p><img src="assets/linux-file-structure_orig.png" alt=""></p>
+<p>&#xE23;&#xE39;&#xE1B;&#xE41;&#xE1A;&#xE1A;&#xE17;&#xE35;&#xE48;&#xE40;&#xE01;&#xE47;&#xE1A;&#xE01;&#xE47;&#xE08;&#xE30;&#xE40;&#xE01;&#xE47;&#xE1A;&#xE43;&#xE19;&#xE25;&#xE31;&#xE01;&#xE29;&#xE13;&#xE30;&#xE02;&#xE2D;&#xE07; &#xE42;&#xE04;&#xE23;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE02;&#xE2D;&#xE07; Folder &#xE43;&#xE19;&#xE41;&#xE15;&#xE48;&#xE25;&#xE30;  &#xE23;&#xE30;&#xE1A;&#xE1A;&#xE1B;&#xE0E;&#xE34;&#xE1A;&#xE31;&#xE15;&#xE34;&#xE01;&#xE32;&#xE23;&#xE2B;&#xE19;&#xE36;&#xE48;&#xE07;&#xE08;&#xE30;&#xE21;&#xE35; root file system &#xE2B;&#xE23;&#xE37;&#xE2D; &quot;/&quot;  &#xE2D;&#xE22;&#xE39;&#xE48;&#xE23;&#xE30;&#xE14;&#xE31;&#xE1A;&#xE42;&#xE04;&#xE23;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE1A;&#xE19;&#xE2A;&#xE38;&#xE14; &#xE42;&#xE14;&#xE22;&#xE02;&#xE2D;&#xE43;&#xE2B;&#xE49;&#xE17;&#xE33;&#xE04;&#xE27;&#xE32;&#xE21;&#xE40;&#xE02;&#xE49;&#xE32;&#xE43;&#xE08;&#xE27;&#xE48;&#xE32;&#xE42;&#xE04;&#xE23;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE02;&#xE2D;&#xE07;   Folder &#xE41;&#xE25;&#xE30; File &#xE15;&#xE48;&#xE32;&#xE07;&#xE46; &#xE19;&#xE31;&#xE49;&#xE19;&#xE08;&#xE30;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE43;&#xE19;&#xE25;&#xE31;&#xE01;&#xE29;&#xE13;&#xE30;&#xE02;&#xE2D;&#xE07; Logical System &#xE44;&#xE21;&#xE48;&#xE43;&#xE0A;&#xE48;&#xE40;&#xE1B;&#xE47;&#xE19; &#xE41;&#xE1A;&#xE1A; Physical  &#xE43;&#xE19;&#xE04;&#xE27;&#xE32;&#xE21;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE08;&#xE23;&#xE34;&#xE07; file &#xE15;&#xE48;&#xE32;&#xE07;&#xE46; &#xE08;&#xE31;&#xE14;&#xE40;&#xE01;&#xE47;&#xE1A;&#xE2D;&#xE22;&#xE39;&#xE48;&#xE43;&#xE19; disk  &#xE17;&#xE35;&#xE48;&#xE15;&#xE48;&#xE32;&#xE07; Partition &#xE01;&#xE31;&#xE19; &#xE2B;&#xE23;&#xE37;&#xE2D; &#xE2D;&#xE22;&#xE39;&#xE48;&#xE01;&#xE31;&#xE19;&#xE1A;&#xE19; Disk &#xE04;&#xE19;&#xE25;&#xE30;&#xE01;&#xE49;&#xE2D;&#xE19;&#xE01;&#xE31;&#xE19; &#xE41;&#xE15;&#xE48;&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE43;&#xE19;  Layer &#xE02;&#xE2D;&#xE07; File system &#xE01;&#xE47;&#xE40;&#xE1B;&#xE23;&#xE35;&#xE22;&#xE1A;&#xE40;&#xE2A;&#xE21;&#xE37;&#xE2D;&#xE19;&#xE2D;&#xE22;&#xE39;&#xE48;&#xE1A;&#xE19; File System &#xE40;&#xE14;&#xE35;&#xE22;&#xE27;&#xE01;&#xE31;&#xE19;</p>
+<pre><code># cd  /
+# ls -lF
+total 20
+lrwxrwxrwx.   1 root    root       7 Aug 23 07:08 bin -&gt; usr/bin/
+dr-xr-xr-x.   5 root    root    4096 Nov 11 13:39 boot/
+drwxr-xr-x.  18 root    root    3120 Nov 16 07:26 dev/
+drwxr-xr-x. 132 root    root    8192 Nov 16 14:26 etc/
+drwxr-xr-x.   5 root    root      52 Nov 12 03:05 home/
+lrwxrwxrwx.   1 root    root       7 Aug 23 07:08 lib -&gt; usr/lib/
+lrwxrwxrwx.   1 root    root       9 Aug 23 07:08 lib64 -&gt; usr/lib64/
+drwxr-xr-x.   2 root    root       6 Nov  5  2016 media/
+drwxr-xr-x.   2 root    root       6 Nov  5  2016 mnt/
+drwxr-xr-x.   4 root    root      48 Nov 12 03:01 opt/
+dr-xr-xr-x. 162 root    root       0 Nov 16 14:26 proc/
+dr-xr-x---.   6 root    root     276 Nov 12 14:35 root/
+drwxr-xr-x.  36 root    root    1180 Nov 16 14:26 run/
+lrwxrwxrwx.   1 root    root       8 Aug 23 07:08 sbin -&gt; usr/sbin/
+drwxr-xr-x.   2 root    root       6 Nov  5  2016 srv/
+dr-xr-xr-x.  13 root    root       0 Nov 16 07:26 sys/
+drwxrwxrwt.  36 root    root    4096 Nov 16 14:26 tmp/
+drwxr-xr-x.  13 root    root     155 Aug 23 07:08 usr/
+drwxr-xr-x.   1 vagrant vagrant  128 Nov 11 10:15 vagrant/
+drwxr-xr-x.  20 root    root     282 Nov 11 13:31 var/
+</code></pre><p><strong>&#xE01;&#xE32;&#xE23; Mount File System &#xE41;&#xE25;&#xE30; Disk</strong></p>
+<p>Linux kernel &#xE08;&#xE30;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23; &#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21; &#xE23;&#xE30;&#xE2B;&#xE27;&#xE48;&#xE32;&#xE07; file system &#xE41;&#xE25;&#xE30; Partition &#xE40;&#xE23;&#xE35;&#xE22;&#xE01;&#xE27;&#xE48;&#xE32; &#xE01;&#xE32;&#xE23; mounting</p>
+<p>&#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  mount    linux  &#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;  mount file system &#xE01;&#xE31;&#xE1A;  Disk  &#xE19;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19;&#xE22;&#xE31;&#xE07;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; mount &#xE44;&#xE1B;&#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE01;&#xE31;&#xE1A;  iso image &#xE41;&#xE25;&#xE30; remote linux file system</p>
+<pre><code># ls -l /dev/sda*
+brw-rw----. 1 root disk 8, 0 Nov 16 07:26 /dev/sda
+brw-rw----. 1 root disk 8, 1 Nov 16 07:26 /dev/sda1
+brw-rw----. 1 root disk 8, 2 Nov 16 07:26 /dev/sda2
+
+# mount | grep &quot;/dev&quot;
+</code></pre><p>&#xE0A;&#xE19;&#xE34;&#xE14;&#xE02;&#xE2D;&#xE07; File System &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  df -Th</p>
+<pre><code># df -Th
+Filesystem          Type      Size  Used Avail Use% Mounted on
+/dev/mapper/cl-root xfs        37G  3.9G   34G  11% /
+devtmpfs            devtmpfs  1.9G     0  1.9G   0% /dev
+tmpfs               tmpfs     1.9G     0  1.9G   0% /dev/shm
+tmpfs               tmpfs     1.9G  8.8M  1.9G   1% /run
+tmpfs               tmpfs     1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/sda1           xfs      1014M  258M  757M  26% /boot
+tmpfs               tmpfs     380M   12K  380M   1% /run/user/42
+vagrant             vboxsf    466G   53G  414G  12% /vagrant
+tmpfs               tmpfs     380M     0  380M   0% /run/user/1000
+</code></pre><pre><code># lsblk -f
+NAME        FSTYPE      LABEL          UUID                                   MOUNTPOINT
+sda                                                                           
+&#x251C;&#x2500;sda1      xfs                        5415cfa7-fe39-4660-80d6-edd9bce71cf5   /boot
+&#x2514;&#x2500;sda2      LVM2_member                0e82iE-fRXw-jQyw-M0R3-jQ3P-g0af-HLjZlU 
+  &#x251C;&#x2500;cl-root xfs                        2872e536-d348-4e10-8ad1-5fa30231f5d7   /
+  &#x2514;&#x2500;cl-swap swap                       c5f4bdfc-f7f7-4d36-a582-6e7fcf87c483   [SWAP]
+sr0         iso9660     VBox_GAs_5.2.0 2017-10-18-05-26-49-71
+</code></pre><p>&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; blkid &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE41;&#xE2A;&#xE14;&#xE07;&#xE04;&#xE38;&#xE13;&#xE2A;&#xE21;&#xE1A;&#xE31;&#xE15;&#xE34; disk partition</p>
+<pre><code># blkid /dev/sda1
+/dev/sda1: UUID=&quot;5415cfa7-fe39-4660-80d6-edd9bce71cf5&quot; TYPE=&quot;xfs&quot;
+</code></pre><p>Static file &#xE17;&#xE35;&#xE48;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27;&#xE02;&#xE2D;&#xE07;&#xE01;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23; mount  &#xE44;&#xE14;&#xE49;&#xE41;&#xE01;&#xE48;  /etc/fstab</p>
+<pre><code># cat /etc/fstab 
+
+#
+# /etc/fstab
+# Created by anaconda on Wed Aug 23 00:08:41 2017
+#
+# Accessible filesystems, by reference, are maintained under &apos;/dev/disk&apos;
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/cl-root     /                       xfs     defaults        0 0
+UUID=5415cfa7-fe39-4660-80d6-edd9bce71cf5 /boot                   xfs     defaults        0 0
+/dev/mapper/cl-swap     swap                    swap    defaults        0 0
+</code></pre><p>&#xE19;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01; &#xE08;&#xE30;&#xE17;&#xE33;&#xE2B;&#xE19;&#xE49;&#xE32;&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE40;&#xE01;&#xE47;&#xE1A; &#xE41;&#xE25;&#xE49;&#xE27;&#xE22;&#xE31;&#xE07;&#xE23;&#xE31;&#xE1A;&#xE1C;&#xE34;&#xE14;&#xE0A;&#xE2D;&#xE1A;&#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE40;&#xE01;&#xE35;&#xE22;&#xE27;&#xE01;&#xE31;&#xE1A; Permissions<img src="assets/linux_file_system.png" alt="">&#xE17;&#xE38;&#xE01; File &#xE41;&#xE25;&#xE30; Folder &#xE04;&#xE27;&#xE1A;&#xE04;&#xE38;&#xE21;&#xE01;&#xE32;&#xE23;&#xE40;&#xE02;&#xE49;&#xE32;&#xE16;&#xE36;&#xE07; (Access Controller) &#xE42;&#xE14;&#xE22;&#xE08;&#xE30;&#xE43;&#xE0A;&#xE49; &#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE14;&#xE31;&#xE07;&#xE19;&#xE35;&#xE49;</p>
+<p><strong>&#xE01;&#xE25;&#xE38;&#xE48;&#xE21; permission &#xE1B;&#xE23;&#xE30;&#xE01;&#xE2D;&#xE1A;&#xE14;&#xE49;&#xE27;&#xE22;   u - owner,  g - group,  o - others</strong></p>
+<p><img src="assets/perms1.png" alt=""></p>
+<p>&#xE0A;&#xE19;&#xE34;&#xE14; &#xE02;&#xE2D;&#xE07; permision &#xE44;&#xE14;&#xE49;&#xE41;&#xE01;&#xE48; r - read, w - write,  x-eXecute</p>
+<pre><code># touch test
+# ls -l test 
+-rw-r--r--. 1 root root 0 Nov 16 15:14 test
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19; permission &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  chmod</p>
+<pre><code># chmod g+x test
+# ls -l test
+-rw-r-xr--. 1 root root 0 Nov 16 15:14 test
+
+
+# chmod  o-rwx test
+# ls -l test
+-rw-r-x---. 1 root root 0 Nov 16 15:14 test
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE41;&#xE1B;&#xE25;&#xE07; owner &#xE41;&#xE25;&#xE30; group &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; chown</p>
+<pre><code># chown nobody:wheel test
+# ls -l test
+-rw-r-x---. 1 nobody wheel 0 Nov 16 15:14 test
+</code></pre><p>permission &#xE41;&#xE1A;&#xE1A; &#xE1E;&#xE34;&#xE40;&#xE28;&#xE29; &#xE42;&#xE14;&#xE22;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; flag  &#xE2D;&#xE35;&#xE01; &#xE2A;&#xE2D;&#xE07;&#xE0A;&#xE19;&#xE34;&#xE14; &#xE04;&#xE37;&#xE2D;</p>
+<p>s  -  Set UserID  &#xE41;&#xE25;&#xE30; Set Group ID</p>
+<p>t  - The sticky  flag</p>
+<pre><code># chmod  u+s test
+# ls -l test
+-rwSr-x---. 1 nobody wheel 0 Nov 16 15:14 test
+</code></pre><p>&#xE2B;&#xE21;&#xE32;&#xE22;&#xE16;&#xE36;&#xE07; &#xE43;&#xE04;&#xE23;&#xE01;&#xE47;&#xE15;&#xE32;&#xE21;&#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE2A;&#xE34;&#xE17;&#xE18;&#xE34; &#xE23;&#xE31;&#xE19; file  &#xE19;&#xE35;&#xE49; &#xE08;&#xE30;&#xE23;&#xE31;&#xE19; &#xE43;&#xE19;&#xE10;&#xE32;&#xE19;&#xE30;&#xE02;&#xE2D;&#xE07; Owner  file &#xE40;&#xE0A;&#xE48;&#xE19;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  /bin/passwd</p>
+<pre><code># ls -l /bin/passwd
+-rwsr-xr-x. 1 root root 27832 Jun 10  2014 /bin/passwd
+</code></pre><p><strong>&#xE01;&#xE32;&#xE23;&#xE2D;&#xE49;&#xE32;&#xE07;&#xE2D;&#xE34;&#xE07;&#xE43;&#xE19;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE15;&#xE31;&#xE27;&#xE40;&#xE25;&#xE02; &#xE10;&#xE32;&#xE19; 8  (Octal representation)</strong></p>
+<p><img src="assets/understanding_linux_files_permissions_755.png" alt=""></p>
+<p>&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE04;&#xE48;&#xE32;&#xE02;&#xE2D;&#xE07; permission  &#xE19;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE43;&#xE0A;&#xE49;&#xE23;&#xE30;&#xE1A;&#xE1A;&#xE15;&#xE31;&#xE27;&#xE2D;&#xE31;&#xE01;&#xE29;&#xE23; &#xE43;&#xE19;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;    chmod   &#xE22;&#xE31;&#xE07;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE43;&#xE0A;&#xE49; &#xE23;&#xE30;&#xE1A;&#xE1A;&#xE40;&#xE25;&#xE02;&#xE10;&#xE32;&#xE19; 8</p>
+<p>&quot;r&quot; =  4,  &quot;w&quot; = 2,  &quot;x&quot; = 1,     rwx = 4 + 2 + 1 =7, rx = 4+1 = 5</p>
+<pre><code># chmod 755  test
+# ls -l test
+-rwxr-xr-x. 1 nobody wheel 0 Nov 16 15:14 test
+</code></pre><p><strong>&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; Disk &#xE43;&#xE2B;&#xE49;&#xE01;&#xE31;&#xE1A;  Linux</strong></p>
+<p>&#xE40;&#xE23;&#xE32;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;&#xE40;&#xE15;&#xE34;&#xE21; Disk &#xE02;&#xE36;&#xE49;&#xE19;&#xE21;&#xE32;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE43;&#xE0A;&#xE49;&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE40;&#xE01;&#xE47;&#xE1A;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25; &#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A; &#xE14;&#xE49;&#xE27;&#xE22;  file  vagrant file  &#xE44;&#xE14;&#xE49;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; disk  &#xE2D;&#xE35;&#xE01; &#xE2A;&#xE2D;&#xE07;&#xE01;&#xE49;&#xE2D;&#xE19;</p>
+<p>vim  Vagrantfile</p>
+<pre><code># -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(&quot;2&quot;) do |config|
+  config.vm.box = &quot;bento/centos-7.3&quot;
+  config.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.100&quot;
+  config.vm.provider &quot;virtualbox&quot; do |vb|
+      unless File.exist?(&apos;./secondDisk.vdi&apos;)
+        vb.customize [&apos;createhd&apos;, &apos;--filename&apos;, &apos;./secondDisk.vdi&apos;, &apos;--variant&apos;, &apos;Fixed&apos;, &apos;--size&apos;, 10 * 1024]
+      end
+      unless File.exist?(&apos;./thirdDisk.vdi&apos;)
+        vb.customize [&apos;createhd&apos;, &apos;--filename&apos;, &apos;./thirdDisk.vdi&apos;, &apos;--variant&apos;, &apos;Fixed&apos;, &apos;--size&apos;, 10 * 1024]
+      end
+     vb.memory = &quot;4096&quot;
+     vb.cpus = &quot;2&quot;
+     vb.customize [&apos;storageattach&apos;, :id,  &apos;--storagectl&apos;, &apos;SATA Controller&apos;, &apos;--port&apos;, 1, &apos;--device&apos;, 0, &apos;--type&apos;, &apos;hdd&apos;, &apos;--medium&apos;, &apos;./secondDisk.vdi&apos;]
+     vb.customize [&apos;storageattach&apos;, :id,  &apos;--storagectl&apos;, &apos;SATA Controller&apos;, &apos;--port&apos;, 2, &apos;--device&apos;, 0, &apos;--type&apos;, &apos;hdd&apos;, &apos;--medium&apos;, &apos;./thirdDisk.vdi&apos;]
+
+  end
+end
+</code></pre><p>&#xE40;&#xE23;&#xE32;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  lsblk &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE14;&#xE39;&#xE27;&#xE48;&#xE32; &#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;  disk &#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE44;&#xE23;&#xE1A;&#xE49;&#xE32;&#xE07;</p>
+<pre><code># lsblk
+NAME        MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+sda           8:0    0  40G  0 disk 
+&#x251C;&#x2500;sda1        8:1    0   1G  0 part /boot
+&#x2514;&#x2500;sda2        8:2    0  39G  0 part 
+  &#x251C;&#x2500;cl-root 253:0    0  37G  0 lvm  /
+  &#x2514;&#x2500;cl-swap 253:1    0   2G  0 lvm  [SWAP]
+sdb           8:16   0  10G  0 disk 
+sdc           8:32   0  10G  0 disk
+</code></pre><p><strong>&#xE02;&#xE31;&#xE49;&#xE19;&#xE15;&#xE2D;&#xE19;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;</strong></p>
+<ol>
+<li>&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE08;&#xE30;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; fdisk &#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE41;&#xE1A;&#xE48;&#xE07; partitions</li>
+<li>Format &#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;file system  &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  &#xE40;&#xE0A;&#xE48;&#xE19; mkfs.ext2 mkfs.ext3 mkfs.ext4 mkfs.minix  mkfs.xfs</li>
+<li>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; folder &#xE41;&#xE25;&#xE30;&#xE17;&#xE33;&#xE01;&#xE32;&#xE23;  mount</li>
+<li>&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;&#xE40;&#xE15;&#xE34;&#xE21;&#xE43;&#xE19; /etc/fstab</li>
+</ol>
+<pre><code># fdisk /dev/sdb
+Welcome to fdisk (util-linux 2.23.2).
+
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table
+Building a new DOS disklabel with disk identifier 0x99b53f52.
+
+Command (m for help): n                  #&lt;---   n &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; new partition
+Partition type:
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended
+Select (default p): p                   #&lt;----    p  &#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; &#xE41;&#xE1A;&#xE1A;&#xE0A;&#xE19;&#xE34;&#xE14; primary
+Partition number (1-4, default 1):      #&lt;----    Enter &#xE1C;&#xE48;&#xE32;&#xE19;&#xE22;&#xE2D;&#xE21;&#xE23;&#xE31;&#xE1A;&#xE04;&#xE48;&#xE32; default
+First sector (2048-20971519, default 2048):    #&lt;--- Enter &#xE1C;&#xE48;&#xE32;&#xE19;
+Using default value 2048
+Last sector, +sectors or +size{K,M,G} (2048-20971519, default 20971519):  #&lt;---- Enter &#xE1C;&#xE48;&#xE32;&#xE19;
+Using default value 20971519
+Partition 1 of type Linux and of size 10 GiB is set
+
+Command (m for help): w                        # write &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE1A;&#xE31;&#xE19;&#xE17;&#xE36;&#xE01;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE41;&#xE1B;&#xE25;&#xE07;
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+Syncing disks.
+</code></pre><p>Format partition /dev/sdb1 &#xE43;&#xE2B;&#xE49;&#xE40;&#xE1B;&#xE47;&#xE19; &#xE0A;&#xE19;&#xE34;&#xE14;  ext4</p>
+<pre><code># mkfs.ext4 /dev/sdb1
+
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=0 blocks, Stripe width=0 blocks
+655360 inodes, 2621184 blocks
+131059 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=2151677952
+80 block groups
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks: 
+    32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information: done
+</code></pre><p>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;  folder   /data &#xE41;&#xE25;&#xE30; mount</p>
+<pre><code># mkdir /data
+# mount -t ext4  /dev/sdb1 /data
+# mount | grep sdb1
+...
+/dev/sdb1 on /data type ext4 (rw,relatime,seclabel,data=ordered)
+# umount /data
+</code></pre><p>vi /etc/fstab</p>
+<pre><code>...
+/dev/sdb1    /data     ext4  defaults   0 0
+</code></pre><p>&#xE2B;&#xE25;&#xE31;&#xE07;&#xE08;&#xE32;&#xE01;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; &#xE1A;&#xE23;&#xE23;&#xE17;&#xE31;&#xE14;&#xE43;&#xE19;  /etc/fstab  &#xE41;&#xE25;&#xE30;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  mount -a &#xE43;&#xE2B;&#xE49; &#xE2D;&#xE48;&#xE32;&#xE19; &#xE44;&#xE1F;&#xE25;&#xE4C; /etc/fstab</p>
+<pre><code># mount -a
+# mount  | grep sdb1
+/dev/sdb1 on /data type ext4 (rw,relatime,seclabel,data=ordered)
+</code></pre><p>&#xE43;&#xE2B;&#xE49;&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A; persistance  mounts &#xE14;&#xE49;&#xE27;&#xE22;&#xE01;&#xE32;&#xE23;  reboot</p>
+<pre><code>reboot
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="password.html" class="navigation navigation-prev " aria-label="Previous page: การบริหารจัดการ Password">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="logical-volume.html" class="navigation navigation-next " aria-label="Next page: การใช้งาน Logical Volume ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"โครงสร้าง Linux File System และ Permission","level":"1.6","depth":1,"next":{"title":"การใช้งาน Logical Volume ","level":"1.7","depth":1,"path":"logical-volume.md","ref":"logical-volume.md","articles":[]},"previous":{"title":"การบริหารจัดการ Password","level":"1.5","depth":1,"path":"password.md","ref":"password.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux-file-system-permission.md","mtime":"2018-02-23T06:47:06.191Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

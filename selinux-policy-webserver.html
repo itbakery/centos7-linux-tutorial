@@ -1,0 +1,596 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Selinux Policy และ  webserver · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mysql.html" />
+    
+    
+    <link rel="prev" href="linux-system-admin.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Selinux Policy และ  webserver</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="selinux-policy-&#xE41;&#xE25;&#xE30;--webserver">Selinux Policy &#xE41;&#xE25;&#xE30;  webserver</h2>
+<p>&#xE15;&#xE48;&#xE2D;&#xE40;&#xE19;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE08;&#xE32;&#xE01;&#xE1A;&#xE17;&#xE17;&#xE35;&#xE48;&#xE41;&#xE25;&#xE49;&#xE27; &#xE40;&#xE23;&#xE32;&#xE44;&#xE14;&#xE49;&#xE17;&#xE23;&#xE32;&#xE1A;&#xE27;&#xE48;&#xE32; selinux &#xE08;&#xE30;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE04;&#xE27;&#xE1A;&#xE04;&#xE38;&#xE21; selinux policy</p>
+<pre><code># sestatus 
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   permissive
+Mode from config file:          permissive
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Max kernel policy version:      28
+
+
+# semanage fcontext -l
+</code></pre><p>&#xE15;&#xE31;&#xE27;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07; &#xE42;&#xE04;&#xE23;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE02;&#xE2D;&#xE07; web &#xE17;&#xE35;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;</p>
+<pre><code>mkdir -p /webapps/apps/app1/public_html/{wp-content,uploads}
+mkdir -p /webapps/logs/app1
+mkdir -p /webapps/cache/app1
+</code></pre><pre><code>/webapps
+   |---/apps
+   |     |---/app1
+   |           |---/public_html
+   |                 |---/wp-content
+   |                 |---/uploads
+   |                 |---/index.php
+   |                 |---/wp-config.php
+   |     
+   |---/logs
+   |     |---/app1
+   |
+   |---/cache
+         |---/app1
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:left">/apps</th>
+<th style="text-align:left">This directory contains the web application directories, which host the application files. Each application will be segregated into its own child app directory. All files should be read-only, unless explicit permissions allow otherwise.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">/logs</td>
+<td style="text-align:left">This directory will contain the log files for our applications. Each application will have its own child log directory.</td>
+</tr>
+<tr>
+<td style="text-align:left">cache</td>
+<td style="text-align:left">Contains the Apache cache directories for each application.</td>
+</tr>
+</tbody>
+</table>
+<pre><code># ls -Z /webapps/
+drwxr-xr-x. root root unconfined_u:object_r:default_t:s0 apps
+drwxr-xr-x. root root unconfined_u:object_r:default_t:s0 cache
+drwxr-xr-x. root root unconfined_u:object_r:default_t:s0 logs
+</code></pre><p>&#xE43;&#xE0A;&#xE49; option -Z &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE14;&#xE39; context &#xE08;&#xE30;&#xE40;&#xE2B;&#xE47;&#xE19;</p>
+<p>&#xE04;&#xE48;&#xE32;&#xE02;&#xE2D;&#xE07; Contexts type &#xE17;&#xE35;&#xE48;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27;&#xE02;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE31;&#xE1A; apache</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">httpd_sys_content_t</th>
+<th style="text-align:left">Read-only directories and files used by Apache</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">httpd_sys_rw_content_t</td>
+<td style="text-align:left">Readable and writable directories and files used by Apache. Assign this to directories where files can be created or modified by your application, or assign it to files directory to allow your application to modify them.</td>
+</tr>
+<tr>
+<td style="text-align:left">httpd_log_t</td>
+<td style="text-align:left">Used by Apache to generate and append to web application log files.</td>
+</tr>
+<tr>
+<td style="text-align:left">httpd_cache_t</td>
+<td style="text-align:left">Assign to a directory used by Apache for caching, if you are using mod_cache.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; context type &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; directory</strong></p>
+<p>&#xE01;&#xE32;&#xE23;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; policy  &#xE04;&#xE37;&#xE2D;&#xE01;&#xE32;&#xE23;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; context type &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; Directory &#xE15;&#xE32;&#xE21;&#xE42;&#xE04;&#xE23;&#xE07;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE14;&#xE31;&#xE07;&#xE19;&#xE35;&#xE49;</p>
+<p>1   &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; httpd_sys_content_t context   &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; /webapps directory</p>
+<pre><code># semanage fcontext -a -t httpd_sys_content_t &quot;/webapps(/.*)?&quot;
+</code></pre><p>2 &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; httpd_log_t context &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; logging directory</p>
+<pre><code># semanage fcontext -a -t httpd_log_t &quot;/webapps/logs(/.*)?&quot;
+</code></pre><p>3 &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; httpd_cache_t context</p>
+<pre><code># semanage fcontext -a -t httpd_cache_t &quot;/webapps/cache(/.*)?&quot;
+</code></pre><p><strong>&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;&#xE40;&#xE15;&#xE34;&#xE21;&#xE2A;&#xE34;&#xE17;&#xE18;&#xE34; &#xE01;&#xE32;&#xE23;&#xE40;&#xE02;&#xE35;&#xE22;&#xE19;&#xE2D;&#xE48;&#xE32;&#xE19; Read Write Access &#xE43;&#xE19;&#xE01;&#xE23;&#xE13;&#xE35; &#xE17;&#xE35;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">/uploads/</th>
+<th style="text-align:left">Directory</th>
+<th style="text-align:left">Allow WordPress to upload files for blog entries, such as images, videos, audio, etc.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">/wp-config.php</td>
+<td style="text-align:left">File</td>
+<td style="text-align:left">This file is modifed by WordPress when permalinks are enabled or changed. It needs to be writable, otherwise, changes to the file will have to be done manually.</td>
+</tr>
+<tr>
+<td style="text-align:left">/logs</td>
+<td style="text-align:left">Directory</td>
+<td style="text-align:left">Allow write logfile to directory</td>
+</tr>
+</tbody>
+</table>
+<p>4 &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; &#xE2A;&#xE34;&#xE17;&#xE18;&#xE34; &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; /uploads</p>
+<pre><code># semanage fcontext -a -t httpd_sys_rw_content_t &quot;/webapps/apps/app1/public_html/uploads(/.*)?&quot;
+</code></pre><p>5 &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; &#xE2A;&#xE34;&#xE17;&#xE18;&#xE34; &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48; /wp-config.php</p>
+<pre><code># semanage fcontext -a -t httpd_sys_rw_content_t &quot;/webapps/apps/app1/public_html/wp-config.php&quot;
+</code></pre><p>6 &#xE01;&#xE33;&#xE2B;&#xE19;&#xE14;&#xE2A;&#xE34;&#xE17;&#xE18;&#xE34; &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48;  logs</p>
+<pre><code># semanage fcontext -a -t httpd_log_t &quot;/webapps/logs/app1(/.*)?&quot;
+</code></pre><pre><code># semanage fcontext -l  | grep webapps
+/webapps(/.*)?                                     all files          system_u:object_r:httpd_sys_content_t:s0 
+/webapps/logs(/.*)?                                all files          system_u:object_r:httpd_log_t:s0 
+/webapps/cache(/.*)?                               all files          system_u:object_r:httpd_cache_t:s0 
+/webapps/apps/app1/public_html/uploads(/.*)?       all files          system_u:object_r:httpd_sys_rw_content_t:s0 
+/webapps/apps/app1/public_html/wp-config.php       all files          system_u:object_r:httpd_sys_rw_content_t:s0 
+/webapps/logs/app1(/.*)?                           all files          system_u:object_r:httpd_sys_rw_content_t:s0
+</code></pre><p>7 Apply SELinux Policy</p>
+<pre><code># restorecon -Rv /webapps
+</code></pre><p>8 Dowload wordpress version &#xE25;&#xE48;&#xE32;&#xE2A;&#xE38;&#xE14;</p>
+<pre><code># yum install wget rsync
+# cd /
+# wget https://wordpress.org/latest.zip
+# rsync -avp  wordpress/*   /webapps/apps/app1/public_html/
+# cd /webapps/apps/app1/public_html/
+# cp wp-config-sample.php wp-config.php
+
+# chown -R apache:apache /webapps
+# restorecon -Rv /webapps
+</code></pre><p>9 &#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; vhost</p>
+<pre><code># cd /etc/httpd/conf.d/
+# cp webserver-vhost.conf  wordpress1-vhost.conf
+
+# vi wordpress1-vhost.conf
+
+&lt;VirtualHost *:80&gt;
+    ServerAdmin webmaster@example.com
+    ServerName wordpress1.example.com
+    ServerAlias wordpress1.example.com
+    DocumentRoot /webapps/apps/app1/public_html/
+    ErrorLog /webapps/logs/app1/error.log
+    CustomLog /webapps/logs/app1/access.log combined
+    &lt;Directory &quot;webapps/apps/app1/public_html&quot;&gt;
+        Options Indexes MultiViews FollowSymLinks Includes ExecCGI
+        Require all granted
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre><p>10 Restart httpd</p>
+<pre><code># systemctl restart httpd
+</code></pre><p>11 &#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;  wordpress1.example.com wordpress1</p>
+<pre><code>192.168.33.100  wordpress1.example.com  wordpress1
+</code></pre><p>12 &#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; browser &#xE44;&#xE1B;&#xE22;&#xE31;&#xE07;</p>
+<pre><code>wordpress1.example.com/
+</code></pre><p><img src="assets/wordpress.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="linux-system-admin.html" class="navigation navigation-prev " aria-label="Previous page: พื้นฐาน Linux System Admin">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mysql.html" class="navigation navigation-next " aria-label="Next page: การบริหารจัดการ ฐานข้อมูล ด้วย MySQL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Selinux Policy และ  webserver","level":"1.9","depth":1,"next":{"title":"การบริหารจัดการ ฐานข้อมูล ด้วย MySQL","level":"1.10","depth":1,"path":"mysql.md","ref":"mysql.md","articles":[]},"previous":{"title":"พื้นฐาน Linux System Admin","level":"1.8","depth":1,"path":"linux-system-admin.md","ref":"linux-system-admin.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"selinux-policy-webserver.md","mtime":"2018-02-23T06:47:06.243Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

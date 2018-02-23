@@ -1,0 +1,801 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>การใช้งาน Logical Volume  · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="linux-system-admin.html" />
+    
+    
+    <link rel="prev" href="linux-file-system-permission.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >การใช้งาน Logical Volume </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;-logical-volume-manager--lvm">&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; Logical Volume Manager  (LVM)</h2>
+<p>&#xE43;&#xE19; Linux &#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE17;&#xE35;&#xE48;&#xE08;&#xE30;&#xE19;&#xE33;&#xE40;&#xE2D;&#xE32; physical  volume &#xE2B;&#xE23;&#xE37;&#xE2D; hardisk &#xE21;&#xE32;&#xE23;&#xE27;&#xE21;&#xE01;&#xE31;&#xE19;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE01;&#xE49;&#xE2D;&#xE19; &#xE40;&#xE23;&#xE35;&#xE22;&#xE01;&#xE27;&#xE48;&#xE32; volume groups (VG) &#xE21;&#xE35;&#xE25;&#xE31;&#xE01;&#xE29;&#xE13;&#xE30;&#xE40;&#xE1B;&#xE47;&#xE19; Logical Abstraction layer &#xE41;&#xE25;&#xE30;&#xE19;&#xE33;&#xE40;&#xE2D;&#xE32;   VG &#xE21;&#xE32;&#xE41;&#xE1A;&#xE48;&#xE07;&#xE40;&#xE1B;&#xE47;&#xE19; Logical Volume (LV)  &#xE15;&#xE32;&#xE21;&#xE02;&#xE19;&#xE32;&#xE14;&#xE17;&#xE35;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;  &#xE01;&#xE48;&#xE2D;&#xE19;&#xE19;&#xE33;&#xE44;&#xE1B;  mount &#xE01;&#xE31;&#xE1A; file system</p>
+<p>LVM  &#xE21;&#xE35;&#xE04;&#xE27;&#xE32;&#xE21;&#xE22;&#xE37;&#xE14;&#xE2B;&#xE22;&#xE38;&#xE14;&#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; &#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE17;&#xE35;&#xE48;&#xE08;&#xE30;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;&#xE2B;&#xE23;&#xE37;&#xE2D;&#xE25;&#xE14;&#xE02;&#xE19;&#xE32;&#xE14;&#xE44;&#xE14;&#xE49;&#xE42;&#xE14;&#xE22;&#xE44;&#xE21;&#xE48;&#xE08;&#xE33;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE2B;&#xE22;&#xE38;&#xE14; Application  &#xE2B;&#xE23;&#xE37;&#xE2D;&#xE44;&#xE21;&#xE48;&#xE08;&#xE33;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE15;&#xE49;&#xE2D;&#xE07;  unmount file systems</p>
+<p><img src="assets/basic-lvm-volume.png" alt=""></p>
+<p>Disk &#xE17;&#xE35;&#xE48;&#xE19;&#xE33;&#xE21;&#xE32;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE40;&#xE1B;&#xE47;&#xE19; Physical volume &#xE44;&#xE21;&#xE48;&#xE08;&#xE33;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE21;&#xE35;&#xE02;&#xE19;&#xE32;&#xE14;&#xE17;&#xE35;&#xE48;&#xE40;&#xE17;&#xE48;&#xE32;&#xE01;&#xE31;&#xE19; &#xE42;&#xE14;&#xE22;&#xE2B;&#xE19;&#xE48;&#xE27;&#xE22;&#xE02;&#xE19;&#xE32;&#xE14;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE27;&#xE32;&#xE21;&#xE08;&#xE38; &#xE08;&#xE30;&#xE2D;&#xE49;&#xE32;&#xE07;&#xE2D;&#xE34;&#xE07;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE2B;&#xE19;&#xE48;&#xE27;&#xE22;&#xE40;&#xE23;&#xE35;&#xE22;&#xE01;&#xE27;&#xE48;&#xE32; extents &#xE41;&#xE15;&#xE48;&#xE25;&#xE30; extends &#xE21;&#xE35;&#xE02;&#xE19;&#xE32;&#xE14; 4 MB &#xE40;&#xE0A;&#xE48;&#xE19;&#xE2B;&#xE32;&#xE01; PV1 &#xE21;&#xE35;&#xE02;&#xE19;&#xE32;&#xE14;&#xE15;&#xE32;&#xE21;&#xE23;&#xE39;&#xE1B;&#xE14;&#xE49;&#xE32;&#xE19;&#xE25;&#xE48;&#xE32;&#xE07; 200 extents  &#xE01;&#xE47;&#xE21;&#xE35;&#xE02;&#xE19;&#xE32;&#xE14; 800MB</p>
+<p><img src="assets/uneven_pvs.png" alt=""></p>
+<p>&#xE02;&#xE31;&#xE49;&#xE19;&#xE15;&#xE2D;&#xE19;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;</p>
+<ol>
+<li>initialize partition &#xE14;&#xE49;&#xE27;&#xE22; &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; fdisk &#xE41;&#xE25;&#xE30;&#xE21;&#xE35;&#xE0A;&#xE19;&#xE34;&#xE14;&#xE40;&#xE1B;&#xE47;&#xE19; 8e  (Linux LVM) </li>
+<li>&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19; partition &#xE17;&#xE35;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19; &#xE40;&#xE1B;&#xE47;&#xE19; LVM  &#xE43;&#xE2B;&#xE49;&#xE40;&#xE1B;&#xE47;&#xE19; Physical Volume &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; pvcreate</li>
+<li>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; Volume Group &#xE08;&#xE32;&#xE01; Physical Volume  &#xE17;&#xE35;&#xE48;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE08;&#xE32;&#xE01;&#xE02;&#xE49;&#xE2D;&#xE17;&#xE35;&#xE48; 1</li>
+<li>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; Logical Volume  &#xE41;&#xE25;&#xE30; Mount  &#xE01;&#xE31;&#xE1A; file system</li>
+</ol>
+<p>vim Vagrantfile</p>
+<pre><code># -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(&quot;2&quot;) do |config|
+  config.vm.box = &quot;bento/centos-7.3&quot;
+  config.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.100&quot;
+  config.vm.provider &quot;virtualbox&quot; do |vb|
+      unless File.exist?(&apos;./secondDisk.vdi&apos;)
+        vb.customize [&apos;createhd&apos;, &apos;--filename&apos;, &apos;./secondDisk.vdi&apos;, &apos;--variant&apos;, &apos;Fixed&apos;, &apos;--size&apos;, 10 * 1024]
+      end
+      unless File.exist?(&apos;./thirdDisk.vdi&apos;)
+        vb.customize [&apos;createhd&apos;, &apos;--filename&apos;, &apos;./thirdDisk.vdi&apos;, &apos;--variant&apos;, &apos;Fixed&apos;, &apos;--size&apos;, 20 * 1024]
+      end
+      unless File.exist?(&apos;./fourthDisk.vdi&apos;)
+        vb.customize [&apos;createhd&apos;, &apos;--filename&apos;, &apos;./fourthDisk.vdi&apos;, &apos;--variant&apos;, &apos;Fixed&apos;, &apos;--size&apos;, 30 * 1024]
+      end
+
+     vb.memory = &quot;4096&quot;
+     vb.cpus = &quot;2&quot;
+     vb.customize [&apos;storageattach&apos;, :id,  &apos;--storagectl&apos;, &apos;SATA Controller&apos;, &apos;--port&apos;, 1, &apos;--device&apos;, 0, &apos;--type&apos;, &apos;hdd&apos;, &apos;--medium&apos;, &apos;./secondDisk.vdi&apos;]
+     vb.customize [&apos;storageattach&apos;, :id,  &apos;--storagectl&apos;, &apos;SATA Controller&apos;, &apos;--port&apos;, 2, &apos;--device&apos;, 0, &apos;--type&apos;, &apos;hdd&apos;, &apos;--medium&apos;, &apos;./thirdDisk.vdi&apos;]
+     vb.customize [&apos;storageattach&apos;, :id,  &apos;--storagectl&apos;, &apos;SATA Controller&apos;, &apos;--port&apos;, 3, &apos;--device&apos;, 0, &apos;--type&apos;, &apos;hdd&apos;, &apos;--medium&apos;, &apos;./fourthDisk.vdi&apos;]
+
+  end
+end
+</code></pre><p>&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A; Vagrantfile &#xE08;&#xE30;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; disk &#xE44;&#xE1B; 3 &#xE25;&#xE39;&#xE01;  /dev/sdb,   /dev/sdc,  /dev/sdd  &#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE02;&#xE19;&#xE32;&#xE14;&#xE17;&#xE35;&#xE48;&#xE44;&#xE21;&#xE48;&#xE40;&#xE17;&#xE48;&#xE32;&#xE01;&#xE31;&#xE19;</p>
+<pre><code># lsblk
+NAME        MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+sda           8:0    0  40G  0 disk 
+&#x251C;&#x2500;sda1        8:1    0   1G  0 part /boot
+&#x2514;&#x2500;sda2        8:2    0  39G  0 part 
+  &#x251C;&#x2500;cl-root 253:0    0  37G  0 lvm  /
+  &#x2514;&#x2500;cl-swap 253:1    0   2G  0 lvm  [SWAP]
+sdb           8:16   0  10G  0 disk 
+sdc           8:32   0  20G  0 disk 
+sdd           8:48   0  30G  0 disk
+</code></pre><p>&#xE08;&#xE32;&#xE01;&#xE19;&#xE31;&#xE49;&#xE19;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;   fdisk  &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE41;&#xE1A;&#xE48;&#xE07; partition &#xE41;&#xE25;&#xE30; &#xE0A;&#xE19;&#xE34;&#xE14; 8e &#xE17;&#xE31;&#xE49;&#xE07; /dev/sdb,  /dev/sdc/, /dev/sdd  &#xE14;&#xE31;&#xE07;&#xE15;&#xE31;&#xE27;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;</p>
+<pre><code># fdisk /dev/sdb
+Welcome to fdisk (util-linux 2.23.2).
+
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table
+Building a new DOS disklabel with disk identifier 0xa3b934b4.
+
+Command (m for help): n                           #&lt;----  new partition
+Partition type:
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended
+Select (default p): p                              #&lt;---- &#xE40;&#xE25;&#xE37;&#xE2D;&#xE01;&#xE40;&#xE1B;&#xE47;&#xE19; primary
+Partition number (1-4, default 1): 
+First sector (2048-20971519, default 2048):         #&lt;---- Enter &#xE1C;&#xE48;&#xE32;&#xE19; 
+Using default value 2048
+Last sector, +sectors or +size{K,M,G} (2048-20971519, default 20971519):   #&lt;------ Enter &#xE1C;&#xE48;&#xE32;&#xE19; 
+Using default value 20971519
+Partition 1 of type Linux and of size 10 GiB is set
+
+Command (m for help): t                               #&lt;---- &#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE0A;&#xE19;&#xE34;&#xE14; 
+Selected partition 1
+Hex code (type L to list all codes): 8e               #&lt;---- &#xE40;&#xE25;&#xE37;&#xE2D;&#xE01;&#xE40;&#xE1B;&#xE47;&#xE19;  8e
+Changed type of partition &apos;Linux&apos; to &apos;Linux LVM&apos;
+
+Command (m for help): w                              #&lt;---- &#xE1A;&#xE31;&#xE19;&#xE17;&#xE36;&#xE01;&#xE01;&#xE32;&#xE23;&#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19;&#xE41;&#xE1B;&#xE25;&#xE07;
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+Syncing disks.
+</code></pre><p>&#xE43;&#xE2B;&#xE49;&#xE17;&#xE33;&#xE0B;&#xE49;&#xE33;&#xE2D;&#xE35;&#xE01;&#xE04;&#xE23;&#xE31;&#xE49;&#xE07;&#xE01;&#xE31;&#xE1A;  /dev/sdc,  /dev/sdd</p>
+<pre><code># partprobe
+# lvmdiskscan 
+  /dev/cl/root [      36.99 GiB] 
+  /dev/sda1    [       1.00 GiB] 
+  /dev/cl/swap [       2.00 GiB] 
+  /dev/sda2    [      39.00 GiB] LVM physical volume
+  /dev/sdb1    [      10.00 GiB] 
+  /dev/sdc1    [      20.00 GiB] 
+  /dev/sdd1    [      30.00 GiB]
+</code></pre><p>&#xE40;&#xE21;&#xE37;&#xE48;&#xE2D;&#xE41;&#xE1A;&#xE48;&#xE07; partition &#xE40;&#xE23;&#xE35;&#xE22;&#xE1A;&#xE23;&#xE49;&#xE2D;&#xE22;&#xE43;&#xE2B;&#xE49; &#xE40;&#xE1B;&#xE25;&#xE35;&#xE48;&#xE22;&#xE19; /dev/sdb, /dev/sdc, /dev/sdd &#xE40;&#xE1B;&#xE47;&#xE19; physical volume &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  pvcreate</p>
+<pre><code># pvcreate /dev/sdb1  /dev/sdc1  /dev/sdd1
+  Physical volume &quot;/dev/sdb1&quot; successfully created.
+  Physical volume &quot;/dev/sdc1&quot; successfully created.
+  Physical volume &quot;/dev/sdd1&quot; successfully created.
+</code></pre><p>&#xE15;&#xE23;&#xE27;&#xE08;&#xE2A;&#xE2D;&#xE1A;&#xE01;&#xE31;&#xE1A; lvmdiskscan,   pvdisplay,  pvscan</p>
+<pre><code># lvmdiskscan 
+  /dev/cl/root [      36.99 GiB] 
+  /dev/sda1    [       1.00 GiB] 
+  /dev/cl/swap [       2.00 GiB] 
+  /dev/sda2    [      39.00 GiB] LVM physical volume
+  /dev/sdb1    [      10.00 GiB] LVM physical volume
+  /dev/sdc1    [      20.00 GiB] LVM physical volume
+  /dev/sdd1    [      30.00 GiB] LVM physical volume
+  2 disks
+  1 partition
+  0 LVM physical volume whole disks
+  4 LVM physical volumes
+</code></pre><pre><code># pvdisplay /dev/sdb1
+  &quot;/dev/sdb1&quot; is a new physical volume of &quot;10.00 GiB&quot;
+  --- NEW Physical volume ---
+  PV Name               /dev/sdb1
+  VG Name               
+  PV Size               10.00 GiB
+  Allocatable           NO
+  PE Size               0   
+  Total PE              0
+  Free PE               0
+  Allocated PE          0
+  PV UUID               6xbIOv-t4Ho-XZ2p-DBxD-Epqm-fSkM-MYIGnq
+</code></pre><pre><code># pvscan 
+  PV /dev/sda2   VG cl              lvm2 [39.00 GiB / 4.00 MiB free]
+  PV /dev/sdd1                      lvm2 [30.00 GiB]
+  PV /dev/sdb1                      lvm2 [10.00 GiB]
+  PV /dev/sdc1                      lvm2 [20.00 GiB]
+  Total: 4 [98.99 GiB] / in use: 1 [39.00 GiB] / in no VG: 3 [60.00 GiB]
+</code></pre><p>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; volume group &#xE0A;&#xE37;&#xE48;&#xE2D;  vg00 &#xE08;&#xE32;&#xE01;  /dev/sdb1,  /de/sdc1  (&#xE40;&#xE01;&#xE47;&#xE1A; /dev/sdd1 &#xE44;&#xE27;&#xE49;&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE01;&#xE32;&#xE23; &#xE02;&#xE22;&#xE32;&#xE22;) &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; volume group</p>
+<pre><code># vgcreate vg00  /dev/sdb1  /dev/sdc1
+  Volume group &quot;vg00&quot; successfully created
+</code></pre><p>&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  pvdisplay</p>
+<pre><code>[root@localhost ~]# pvdisplay 
+  --- Physical volume ---
+  PV Name               /dev/sdb1
+  VG Name               vg00                 #&lt;---  &#xE0A;&#xE37;&#xE48;&#xE2D; &#xE02;&#xE2D;&#xE07; volume groups
+  PV Size               10.00 GiB / not usable 3.00 MiB
+  Allocatable           yes 
+  PE Size               4.00 MiB
+  Total PE              2559                 #&lt;---- &#xE02;&#xE19;&#xE32;&#xE14;&#xE43;&#xE19;&#xE2B;&#xE19;&#xE48;&#xE27;&#xE22; &#xE02;&#xE2D;&#xE07;  Extents
+  Free PE               2559
+  Allocated PE          0
+  PV UUID               6xbIOv-t4Ho-XZ2p-DBxD-Epqm-fSkM-MYIGnq
+
+  --- Physical volume ---
+  PV Name               /dev/sdc1
+  VG Name               vg00
+  PV Size               20.00 GiB / not usable 3.00 MiB
+  Allocatable           yes 
+  PE Size               4.00 MiB
+  Total PE              5119
+  Free PE               5119
+  Allocated PE          0
+  PV UUID               LhpsHn-Wlh0-8fcT-4KU3-TWkS-C2XK-js66gy
+
+  --- Physical volume ---
+  PV Name               /dev/sda2
+  VG Name               cl
+  PV Size               39.00 GiB / not usable 3.00 MiB
+  Allocatable           yes 
+  PE Size               4.00 MiB
+  Total PE              9983
+  Free PE               1
+  Allocated PE          9982
+  PV UUID               0e82iE-fRXw-jQyw-M0R3-jQ3P-g0af-HLjZlU
+
+  &quot;/dev/sdd1&quot; is a new physical volume of &quot;30.00 GiB&quot;
+  --- NEW Physical volume ---
+  PV Name               /dev/sdd1
+  VG Name               
+  PV Size               30.00 GiB
+  Allocatable           NO
+  PE Size               0   
+  Total PE              0
+  Free PE               0
+  Allocated PE          0
+  PV UUID               jG82dh-6X3e-3S8R-cXpi-KM2g-MJru-p35nfx
+</code></pre><p>&#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; vgdisplay</p>
+<pre><code>[root@localhost ~]# vgdisplay 
+  --- Volume group ---
+  VG Name               vg00
+  System ID             
+  Format                lvm2
+  Metadata Areas        2
+  Metadata Sequence No  1
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                0
+  Open LV               0
+  Max PV                0
+  Cur PV                2
+  Act PV                2
+  VG Size               29.99 GiB
+  PE Size               4.00 MiB
+  Total PE              7678                #&lt;----  /dev/sdb1=2559  +  /dev/sdc1=5119           
+  Alloc PE / Size       0 / 0   
+  Free  PE / Size       7678 / 29.99 GiB
+  VG UUID               0cLfsz-eNQJ-ZG8n-A06q-txXq-kULK-igHZtJ
+
+  --- Volume group ---
+  VG Name               cl
+  System ID             
+  Format                lvm2
+  Metadata Areas        1
+  Metadata Sequence No  3
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                2
+  Open LV               2
+  Max PV                0
+  Cur PV                1
+  Act PV                1
+  VG Size               39.00 GiB
+  PE Size               4.00 MiB
+  Total PE              9983
+  Alloc PE / Size       9982 / 38.99 GiB
+  Free  PE / Size       1 / 4.00 MiB
+  VG UUID               D47t6F-tUkH-QAA3-z5hE-npc3-uwZd-0kZQ77
+</code></pre><p>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; logical volume &#xE02;&#xE19;&#xE32;&#xE14; 2G &#xE0A;&#xE37;&#xE48;&#xE2D;  lv01</p>
+<pre><code>[root@localhost ~]# lvcreate -L 2G -n lv01  vg00
+  Logical volume &quot;lv01&quot; created.
+</code></pre><pre><code>[root@localhost ~]# lvdisplay 
+  --- Logical volume ---
+  LV Path                /dev/vg00/lv01
+  LV Name                lv01
+  VG Name                vg00
+  LV UUID                4dUn2b-GAYi-HGch-QKFM-fNAD-Xpdn-hRlH2T
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2017-11-16 14:17:40 +0000
+  LV Status              available
+  # open                 0
+  LV Size                2.00 GiB
+  Current LE             512
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:2
+</code></pre><p>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; logical volume &#xE41;&#xE15;&#xE48;&#xE21;&#xE35;&#xE2B;&#xE19;&#xE48;&#xE27;&#xE22;&#xE40;&#xE1B;&#xE47;&#xE19; 1000 extent</p>
+<pre><code>[root@localhost ~]# lvcreate -l 1000  -n lv02  vg00
+  Logical volume &quot;lv02&quot; created.
+</code></pre><pre><code>[root@localhost ~]# lvdisplay 
+  --- Logical volume ---
+  LV Path                /dev/vg00/lv01
+  LV Name                lv01
+  VG Name                vg00
+  LV UUID                4dUn2b-GAYi-HGch-QKFM-fNAD-Xpdn-hRlH2T
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2017-11-16 14:17:40 +0000
+  LV Status              available
+  # open                 0
+  LV Size                2.00 GiB
+  Current LE             512
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:2
+
+  --- Logical volume ---
+  LV Path                /dev/vg00/lv02
+  LV Name                lv02
+  VG Name                vg00
+  LV UUID                ZT4unL-yRPD-Rk8e-EPRP-Bd2c-0yzj-2MVqBA
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2017-11-16 14:21:38 +0000
+  LV Status              available
+  # open                 0
+  LV Size                3.91 GiB
+  Current LE             1000                  #&lt;---  &#xE02;&#xE19;&#xE32;&#xE14; 1000 extent
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:3
+</code></pre><p>&#xE02;&#xE22;&#xE32;&#xE22;  /dev/vg00/lv01  &#xE2D;&#xE35;&#xE01; 2 Gigabyte</p>
+<pre><code># lvextend -L +2G /dev/vg00/lv01  
+  Size of logical volume vg00/lv01 changed from 2.00 GiB (512 extents) to 4.00 GiB (1024 extents).
+  Logical volume vg00/lv01 successfully resized.
+</code></pre><p>&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07; File system</p>
+<pre><code># mkfs.ext4  /dev/vg00/lv01
+# mkdir /data01
+# mount /dev/vg00/lv01  /data01
+
+# mount | grep lv01
+/dev/mapper/vg00-lv01 on /data01 type ext4 (rw,relatime,seclabel,data=ordered)
+
+# df -h /data01/
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/vg00-lv01  3.9G   16M  3.6G   1% /data01
+</code></pre><p>&#xE40;&#xE23;&#xE32;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16; &#xE43;&#xE0A;&#xE49; lvcreate -l  &#xE23;&#xE48;&#xE27;&#xE21;&#xE01;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14; &#xE40;&#xE1B;&#xE47;&#xE19; % &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE04;&#xE27;&#xE32;&#xE21;&#xE2A;&#xE30;&#xE14;&#xE27;&#xE01;</p>
+<pre><code># vgdisplay vg00  | grep Free
+  Free  PE / Size       5654 / 22.09 GiB
+
+# lvcreate -l 100%Free -n lv03 vg00
+  Logical volume &quot;lv03&quot; created.
+
+# lvdisplay /dev/vg00/lv03
+  --- Logical volume ---
+  LV Path                /dev/vg00/lv03
+  LV Name                lv03
+  VG Name                vg00
+  LV UUID                bhtXoe-hXFb-sllD-C7OD-63ZG-FtEV-d4gLCq
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2017-11-16 14:42:55 +0000
+  LV Status              available
+  # open                 0
+  LV Size                22.09 GiB
+  Current LE             5654
+  Segments               2
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:4
+
+  [root@localhost ~]# vgdisplay vg00  | grep Free
+  Free  PE / Size       0 / 0                      #&lt;---  &#xE43;&#xE0A;&#xE49; vg00 &#xE2B;&#xE21;&#xE14;&#xE41;&#xE25;&#xE49;&#xE27;
+</code></pre><p>&#xE40;&#xE23;&#xE32;&#xE22;&#xE31;&#xE07;&#xE21;&#xE35; disk /dev/sdd1 &#xE40;&#xE2B;&#xE25;&#xE37;&#xE2D;&#xE2D;&#xE22;&#xE39;&#xE48;  &#xE43;&#xE2B;&#xE49;&#xE19;&#xE33;&#xE21;&#xE32;&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; &#xE43;&#xE19; volume group vg00  &#xE40;&#xE15;&#xE34;&#xE21;&#xE40;&#xE02;&#xE49;&#xE32;&#xE44;&#xE1B;</p>
+<pre><code># vgextend vg00 /dev/sdd1
+  Volume group &quot;vg00&quot; successfully extended
+
+# vgdisplay vg00  | grep Free
+  Free  PE / Size       7679 / 30.00 GiB
+</code></pre><p><strong>&#xE01;&#xE32;&#xE23;&#xE02;&#xE22;&#xE32;&#xE22; file system &#xE2B;&#xE25;&#xE31;&#xE07;&#xE02;&#xE22;&#xE32;&#xE22; logical volume</strong></p>
+<p>&#xE40;&#xE1E;&#xE34;&#xE48;&#xE21; +5G &#xE43;&#xE2B;&#xE49;&#xE41;&#xE01;&#xE48;  /dev/vg00/lv01</p>
+<pre><code># lvextend -L +5G /dev/vg00/lv01
+  Size of logical volume vg00/lv01 changed from 4.00 GiB (1024 extents) to 9.00 GiB (2304 extents).
+  Logical volume vg00/lv01 successfully resized.
+
+# df -h /data01/
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/vg00-lv01  3.9G   16M  3.6G   1% /data01
+</code></pre><p>&#xE41;&#xE15;&#xE48; file system &#xE22;&#xE31;&#xE07;&#xE21;&#xE35;&#xE02;&#xE19;&#xE32;&#xE14; &#xE40;&#xE17;&#xE48;&#xE32;&#xE40;&#xE14;&#xE34;&#xE21; &#xE14;&#xE31;&#xE07;&#xE19;&#xE31;&#xE49;&#xE19;&#xE08;&#xE36;&#xE07;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE02;&#xE22;&#xE32;&#xE22; file system &#xE14;&#xE49;&#xE27;&#xE22;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;  resize2fs</p>
+<pre><code>[root@localhost ~]# resize2fs /dev/vg00/lv01
+resize2fs 1.42.9 (28-Dec-2013)
+Filesystem at /dev/vg00/lv01 is mounted on /data01; on-line resizing required
+old_desc_blocks = 1, new_desc_blocks = 2
+The filesystem on /dev/vg00/lv01 is now 2359296 blocks long.
+
+[root@localhost ~]# df -h /data01/
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/vg00-lv01  8.8G   18M  8.4G   1% /data01
+</code></pre><p>&#xE01;&#xE32;&#xE23;&#xE25;&#xE1A;  logical  volume</p>
+<pre><code># lvremove /dev/vg00/lv03
+Do you really want to remove active logical volume vg00/lv03? [y/n]: y
+  Logical volume &quot;lv03&quot; successfully removed
+</code></pre><p>&#xE25;&#xE1A;  physical volume &#xE08;&#xE32;&#xE01;  volume group</p>
+<pre><code># vgreduce vg00  /dev/sdd1
+  Physical volume &quot;/dev/sdd1&quot; still in use
+</code></pre><p>&#xE25;&#xE1A;&#xE44;&#xE21;&#xE48;&#xE44;&#xE14;&#xE49; &#xE40;&#xE19;&#xE37;&#xE48;&#xE2D;&#xE07; &#xE08;&#xE32;&#xE01; &#xE22;&#xE31;&#xE07;&#xE04;&#xE07;&#xE43;&#xE0A;&#xE49;&#xE07;&#xE32;&#xE19;&#xE2D;&#xE22;&#xE39;&#xE48;  &#xE17;&#xE14;&#xE2A;&#xE2D;&#xE1A;&#xE14;&#xE49;&#xE27;&#xE22;&#xE01;&#xE32;&#xE23;&#xE25;&#xE1A;&#xE17;&#xE31;&#xE49;&#xE07;&#xE2B;&#xE21;&#xE14;</p>
+<pre><code># umount /data01
+# lvremove /dev/vg00/lv01
+# lvremove /dev/vg00/lv02
+# lvremove /dev/vg00/lv03
+
+
+# vgreduce vg00  /dev/sdd1
+  Removed &quot;/dev/sdd1&quot; from volume group &quot;vg00&quot;
+</code></pre><p>&#xE19;&#xE33; Disk &#xE44;&#xE1B;&#xE43;&#xE0A;&#xE49;&#xE01;&#xE31;&#xE1A; volume group  cl  &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23; &#xE02;&#xE22;&#xE32;&#xE22; root</p>
+<pre><code># lvextend -L +10G  /dev/cl/root 
+  Size of logical volume cl/root changed from 36.99 GiB (9470 extents) to 46.99 GiB (12030 extents).
+  Logical volume cl/root successfully resized.
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="linux-file-system-permission.html" class="navigation navigation-prev " aria-label="Previous page: โครงสร้าง Linux File System และ Permission">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="linux-system-admin.html" class="navigation navigation-next " aria-label="Next page: พื้นฐาน Linux System Admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"การใช้งาน Logical Volume ","level":"1.7","depth":1,"next":{"title":"พื้นฐาน Linux System Admin","level":"1.8","depth":1,"path":"linux-system-admin.md","ref":"linux-system-admin.md","articles":[]},"previous":{"title":"โครงสร้าง Linux File System และ Permission","level":"1.6","depth":1,"path":"linux-file-system-permission.md","ref":"linux-file-system-permission.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"logical-volume.md","mtime":"2018-02-23T06:47:06.219Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

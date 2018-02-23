@@ -1,0 +1,535 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>แนะนำคำสั่ง ss command · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="package-build.html" />
+    
+    
+    <link rel="prev" href="linux-linux-network-service.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    การตั้งค่า system local และ keyboard configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="date-and-time.html">
+            
+                <a href="date-and-time.html">
+            
+                    
+                    การตั้งค่า วันที่ และ เวลา  Date and Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    บริหารจัดการบัญชีผู้ใช้งานและกลุ่มผู้ใช้งาน (Users and Groups)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="password.html">
+            
+                <a href="password.html">
+            
+                    
+                    การบริหารจัดการ Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="linux-file-system-permission.html">
+            
+                <a href="linux-file-system-permission.html">
+            
+                    
+                    โครงสร้าง Linux File System และ Permission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="logical-volume.html">
+            
+                <a href="logical-volume.html">
+            
+                    
+                    การใช้งาน Logical Volume 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux-system-admin.html">
+            
+                <a href="linux-system-admin.html">
+            
+                    
+                    พื้นฐาน Linux System Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="selinux-policy-webserver.html">
+            
+                <a href="selinux-policy-webserver.html">
+            
+                    
+                    Selinux Policy และ  webserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    การบริหารจัดการ ฐานข้อมูล ด้วย MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    การใช้งาน SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="linux-linux-network-service.html">
+            
+                <a href="linux-linux-network-service.html">
+            
+                    
+                    การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="ss-command.html">
+            
+                <a href="ss-command.html">
+            
+                    
+                    แนะนำคำสั่ง ss command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="package-build.html">
+            
+                <a href="package-build.html">
+            
+                    
+                    การติดตั้ง package ด้วยการ Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="service-systemd.html">
+            
+                <a href="service-systemd.html">
+            
+                    
+                    การจัดการ Service ต่างๆ ด้วย Systemd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="log-management-journalclt.html">
+            
+                <a href="log-management-journalclt.html">
+            
+                    
+                    Log Management ด้วย Journalclt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    การใช้งาน   GIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >แนะนำคำสั่ง ss command</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#xE41;&#xE19;&#xE30;&#xE19;&#xE33;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;-ss-command">&#xE41;&#xE19;&#xE30;&#xE19;&#xE33;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; ss command</h2>
+<p>Linux  &#xE21;&#xE35;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE21;&#xE37;&#xE2D; &#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE1B;&#xE23;&#xE30;&#xE42;&#xE22;&#xE0A;&#xE19;&#xE4C;&#xE43;&#xE19;&#xE01;&#xE32;&#xE23;&#xE1E;&#xE31;&#xE12;&#xE19;&#xE32; &#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A; &#xE19;&#xE31;&#xE01;&#xE1E;&#xE31;&#xE12;&#xE19;&#xE32;&#xE41;&#xE25;&#xE30;&#xE1C;&#xE39;&#xE49;&#xE14;&#xE39;&#xE41;&#xE25;&#xE23;&#xE30;&#xE1A;&#xE1A;  &#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; ss &#xE40;&#xE1B;&#xE47;&#xE19;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE21;&#xE37;&#xE2D;&#xE17;&#xE35;&#xE48;&#xE43;&#xE0A;&#xE49;&#xE2A;&#xE33;&#xE2B;&#xE23;&#xE31;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE17;&#xE35;&#xE48;&#xE40;&#xE01;&#xE35;&#xE48;&#xE22;&#xE27;&#xE02;&#xE2D;&#xE07;&#xE01;&#xE31;&#xE1A; network, socket static &#xE41;&#xE25;&#xE30;&#xE21;&#xE35;&#xE2D;&#xE35;&#xE01;&#xE21;&#xE32;&#xE01;&#xE21;&#xE32;&#xE22;</p>
+<pre><code># ss -4 state listening
+Netid  Recv-Q Send-Q      Local Address:Port                       Peer Address:Port                
+tcp    0      128                     *:sunrpc                                *:*                    
+tcp    0      128                     *:ssh                                   *:*                    
+tcp    0      100             127.0.0.1:smtp                                  *:*
+</code></pre><p>&#xE41;&#xE2A;&#xE14;&#xE07;  listing sockets &#xE14;&#xE49;&#xE27;&#xE22; -l</p>
+<pre><code>[root@client ~]# ss -l
+</code></pre><p>&#xE40;&#xE23;&#xE32;&#xE2A;&#xE32;&#xE21;&#xE32;&#xE23;&#xE16;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE01;&#xE33;&#xE2B;&#xE19;&#xE14;&#xE43;&#xE2B;&#xE49;&#xE21;&#xE35;&#xE04;&#xE27;&#xE32;&#xE21;&#xE0A;&#xE31;&#xE14;&#xE40;&#xE08;&#xE19;&#xE25;&#xE07;&#xE44;&#xE1B;&#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE43;&#xE2B;&#xE49;&#xE1C;&#xE25;&#xE17;&#xE35;&#xE48;&#xE2D;&#xE2D;&#xE01;&#xE21;&#xE32;&#xE19;&#xE31;&#xE49;&#xE19;&#xE21;&#xE35;&#xE23;&#xE32;&#xE22;&#xE25;&#xE30;&#xE40;&#xE14;&#xE35;&#xE22;&#xE14;&#xE17;&#xE35;&#xE48;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;</p>
+<ol>
+<li>option -t   &#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39;  TCP  connection</li>
+<li>option -u  &#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39; UDP connection</li>
+<li><p>option -x  &#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39;  Unix Connection</p>
+<p>&#xE42;&#xE14;&#xE22; default  &#xE17;&#xE31;&#xE49;&#xE07; 3 option &#xE08;&#xE30;&#xE41;&#xE2A;&#xE14;&#xE07; connection &#xE17;&#xE35;&#xE48;&#xE21;&#xE35;&#xE01;&#xE32;&#xE23;&#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE15;&#xE48;&#xE2D; (Connected &#xE2B;&#xE23;&#xE37;&#xE2D; Establisted) &#xE2B;&#xE32;&#xE01;&#xE15;&#xE49;&#xE2D;&#xE07;&#xE01;&#xE32;&#xE23;&#xE14;&#xE39;&#xE17;&#xE31;&#xE49;&#xE07;&#xE2B;&#xE21;&#xE14; &#xE04;&#xE37;&#xE2D;&#xE14;&#xE39; Listening &#xE14;&#xE49;&#xE27;&#xE22;</p>
+</li>
+</ol>
+<pre><code>[root@client ~]# ss -ta
+State      Recv-Q Send-Q    Local Address:Port                     Peer Address:Port                
+LISTEN     0      128                   *:sunrpc                              *:*                    
+LISTEN     0      128                   *:ssh                                 *:*                    
+LISTEN     0      100           127.0.0.1:smtp                                *:*                    
+ESTAB      0      0             10.0.2.15:ssh                          10.0.2.2:58403                
+LISTEN     0      128                  :::sunrpc                             :::*                    
+LISTEN     0      128                  :::ssh                                :::*                    
+LISTEN     0      100                 ::1:smtp                               :::*
+</code></pre><p>&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; ss &#xE40;&#xE1E;&#xE37;&#xE48;&#xE2D;&#xE01;&#xE23;&#xE2D;&#xE07; &#xE2A;&#xE16;&#xE32;&#xE19;&#xE30;&#xE01;&#xE32;&#xE23;&#xE40;&#xE0A;&#xE37;&#xE48;&#xE2D;&#xE21;&#xE15;&#xE48;&#xE2D;&#xE02;&#xE2D;&#xE07; TCP &#xE42;&#xE14;&#xE22;&#xE21;&#xE35; &#xE04;&#xE48;&#xE32; FILTER &#xE14;&#xE31;&#xE07;&#xE19;&#xE35;&#xE49;</p>
+<ol>
+<li>established</li>
+<li>syn-sent</li>
+<li>syn-recv</li>
+<li>fin-wait-1</li>
+<li>fin-wait-2</li>
+<li>time-wait</li>
+<li>closed</li>
+<li>close-wait</li>
+<li>last-ack</li>
+<li>closing</li>
+<li>all - All of the above states</li>
+<li>connected - All the states except for listen and closed</li>
+<li>synchronized - All the connected states except for syn-sent</li>
+<li>bucket - Show states, which are maintained as minisockets, i.e. time-wait and syn-recv.</li>
+<li>big - Opposite to bucket state.</li>
+</ol>
+<p>&#xE01;&#xE32;&#xE23;&#xE01;&#xE23;&#xE2D;&#xE07;&#xE08;&#xE30;&#xE43;&#xE0A;&#xE49;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07;</p>
+<pre><code>//For tcp ipv4:
+ss -4 state FILTER
+//For tcp ipv6:
+ss -6 state FILTER
+</code></pre><p>&#xE41;&#xE17;&#xE19;&#xE04;&#xE48;&#xE32; FILTER</p>
+<pre><code># ss -4 state listening
+Netid  Recv-Q Send-Q      Local Address:Port                       Peer Address:Port                
+tcp    0      128                     *:sunrpc                                *:*                    
+tcp    0      128                     *:ssh                                   *:*                    
+tcp    0      100             127.0.0.1:smtp                                  *:*   
+
+# ss -4 state established
+Netid  Recv-Q Send-Q      Local Address:Port                       Peer Address:Port                
+udp    0      0               10.0.2.15:36327                     124.109.2.169:ntp                  
+tcp    0      0               10.0.2.15:ssh                            10.0.2.2:58403
+</code></pre><p>&#xE41;&#xE2A;&#xE14;&#xE07; Listening sockets</p>
+<pre><code># ss -ltn
+State      Recv-Q Send-Q      Local Address:Port                     Peer Address:Port              
+LISTEN     0      128                     *:111                                 *:*                  
+LISTEN     0      128                     *:22                                  *:*                  
+LISTEN     0      100             127.0.0.1:25                                  *:*                  
+LISTEN     0      128                    :::111                                :::*                  
+LISTEN     0      128                    :::22                                 :::*                  
+LISTEN     0      100                   ::1:25                                 :::*
+</code></pre><p>&#xE41;&#xE2A;&#xE14;&#xE07; listening udp</p>
+<pre><code># ss -lun
+State      Recv-Q Send-Q      Local Address:Port                     Peer Address:Port              
+UNCONN     0      0                       *:68                                  *:*                  
+UNCONN     0      0                       *:1795                                *:*                  
+UNCONN     0      0               127.0.0.1:323                                 *:*                  
+UNCONN     0      0                      :::9214                               :::*                  
+UNCONN     0      0                     ::1:323                                :::*
+</code></pre><p>&#xE43;&#xE2B;&#xE49;&#xE41;&#xE2A;&#xE14;&#xE07; Process name / PID</p>
+<pre><code># ss -ltnp
+State      Recv-Q Send-Q      Local Address:Port                     Peer Address:Port              
+LISTEN     0      128                     *:111                                 *:*                   users:((&quot;systemd&quot;,pid=1,fd=42))
+LISTEN     0      128                     *:22                                  *:*                   users:((&quot;sshd&quot;,pid=951,fd=3))
+LISTEN     0      100             127.0.0.1:25                                  *:*                   users:((&quot;master&quot;,pid=1391,fd=13))
+LISTEN     0      128                    :::111                                :::*                   users:((&quot;systemd&quot;,pid=1,fd=41))
+LISTEN     0      128                    :::22                                 :::*                   users:((&quot;sshd&quot;,pid=951,fd=4))
+LISTEN     0      100                   ::1:25                                 :::*                   users:((&quot;master&quot;,pid=1391,fd=14))
+</code></pre><p>&#xE41;&#xE2A;&#xE14;&#xE07;  Summary Statics</p>
+<pre><code># ss -s
+Total: 199 (kernel 228)
+TCP:   7 (estab 1, closed 0, orphaned 0, synrecv 0, timewait 0/0), ports 0
+
+Transport Total     IP        IPv6
+*      228       -         -        
+RAW      2         0         2        
+UDP      6         4         2        
+TCP      7         4         3        
+INET      15        8         7        
+FRAG      0         0         0
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="linux-linux-network-service.html" class="navigation navigation-prev " aria-label="Previous page: การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="package-build.html" class="navigation navigation-next " aria-label="Next page: การติดตั้ง package ด้วยการ Build">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"แนะนำคำสั่ง ss command","level":"1.13","depth":1,"next":{"title":"การติดตั้ง package ด้วยการ Build","level":"1.14","depth":1,"path":"package-build.md","ref":"package-build.md","articles":[]},"previous":{"title":"การบริหารจัดการ ระบบเครือข่ายบน  Linux (Linux Network Service)","level":"1.12","depth":1,"path":"linux-linux-network-service.md","ref":"linux-linux-network-service.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ss-command.md","mtime":"2018-02-23T06:47:06.255Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T06:47:39.151Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
